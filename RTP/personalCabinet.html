@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="content">
+                <div class="wrapper">
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Магазин</a>
+                        <a href="service.html" class="menu__item">Услуги</a>
+                        <a href="#" class="menu__item">Системы RTP</a>
+                        <a href="#" class="menu__item">О компании</a>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </div>
+                </div>
+                <div class="person">
+                    <span class="person__contact person__item">8 800 777 77 68</span>
+                    <span class="person__item" onclick="openLogIn()"><img src="img/Icons/logOut.svg" alt="" class="person-icon">Выход</span>
+                    <span class="person__item "><img src="img/Icons/iconBasket.svg" alt="" class="person-icon"">Корзина <div class="basket-count" id="basket-count">1</div><span class="person-basket__sum"><span id="person-basket__sum">1194</span><span class="rub">₽</span></span></a>
+                    <span class="person__item"><img src="img/Icons/iconSearch.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+
+            <div class="header-mobile">
+                <div class="content">
+                    <div class="header__logo-block">
+                        <div class="header__burger__wrap"><img src="img/Mobile/Icons/iconBurger.svg" alt="" class="header__burger" id="burger"></div>
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                        <span class="person__item"><img src="img/Icons/iconBasket.svg" alt="" class="person-icon header-basket-mobile"><div class="basket-count" id="basket-count-mobile">1</div></span></span>
+                    </div>
+                    <div class="header__burger-block">
+                        
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__log-in" id="mobile-item-log-in">
+                                <div class="burger-menu__item burger-menu__item__log-in">
+                                    <img src="img/Icons/logOut.svg" alt="" class="burger-menu__item__log-in__icon">
+                                    <p>Выход</p>
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap">
+                                <div class="burger-menu__item" id="mobile-item-shop"><p>Магазин </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+    
+                                <div class="burger-menu__subitem__wrap" id="burger-menu__subitem__wrap-shop">
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconAlpha.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Alpha</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы и фитинги из полипропилена
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconDelta.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Delta</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы PE-X/EVOH и аксиальные фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconSigma.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Sigma</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Латунные краны и фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconOmega.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Omega</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы для тёплого пола
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconBeta.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Beta</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Канализационые трубы и фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconGamma.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Gamma</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы ПНД и компрессионные фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div> 
+        
+                                    <div class="burger-menu__subitem">
+                                        <div class="burger-menu__subitem__text burger-menu__subitem__text__tools">Инструменты <span class="bold">для монтажа</span></div>
+                                    </div> 
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-services">
+                                <div class="burger-menu__item"><p>Услуги </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-RTP">
+                                <div class="burger-menu__item"><p>Системы RTP </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-company">
+                                <div class="burger-menu__item"><p>О компании </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-contacts">
+                                <div class="burger-menu__item"><p>Контакты </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__hotline">
+                                <div class="burger-menu__item burger-menu__item__hotline-block">
+                                    <figure class="burger-menu__item__hotline">
+                                        <figcaption class="burger-menu__item__hotline-caption">Горячая линия</figcaption>
+                                        8 800 777 77 68
+                                    </figure>
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__search" id="mobile-item-search">
+                                <div class="burger-menu__item">
+                                    <input type="text" placeholder="Поиск по сайту" class="burger-menu__item__search">
+                                    <img src="img/Icons/iconSearch.svg" alt="" class="burger-menu__item__img__search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    
+    
+    <!-- Контент -->
+    <section class="body-head">
+        <div class="content">
+            <div class="banner__anchor-block">
+                <a href="index.html" class="banner__anchor">Главная</a>
+                <div class="banner__anchor-now"><span class="bold">•</span> <span id="personal-office"> Личный кабинет </span> <span id="shopping"> Мои покупки </span> </div>
+            </div>
+            
+            <!-- Переключатель между "Личный кабинет" и "Мои покупки" -->
+            <div class="body-title__block body-title__block-cabinet">
+                <p class="body-title__cabinet body-title__cabinet-activate" onclick="changeCabinetInd(0)"><span class="uppercase">Личный кабинет</span></p>
+                <div class="body-title__cabinet__line-block" onclick="changeCabinet()">
+                    <hr class="body-title__cabinet__line-bg">
+                    <hr class="body-title__cabinet__line-active">
+                </div>
+                <p class="body-title__cabinet"><span class="uppercase" onclick="changeCabinetInd(1)">Мои покупки</span></p>
+                <div class="body-title__personal-stock__block">
+                    <p class="body-title__personal-stock__text">Ваша персональная скидка <span class="body-title__personal-stock__num">9%</span></p>
+                    <img src="img/Service/percent.png" alt="" class="body-title__personal-stocks__img">
+                </div>
+            </div>
+
+            <!-- Мобильный переключатель -->
+            <div class="mobile__log-in__switch">
+                <p class="mobile__log-in__switch-log mobile__switch__profile switch-log-activate" onclick="switchProfile(0)">Личный кабинет</p>
+                <p class="mobile__log-in__switch-log mobile__switch__profile" onclick="switchProfile(1)">Мои покупки</p>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <!-- Редактирование профиля -->
+    <section class="profile-edit">
+        <div class="content">
+            <p class="body-head__payer-text">Плательщик: <span class="body-head__payer medium">Физическое лицо</span></p>
+            <p class="body-title__personal-stock__text body-title__personal-stock__text-mobile">Ваша персональная скидка <span class="body-title__personal-stock__num">9%</span></p>
+
+            <p class="profile-edit__head">Данные пользователя</p>
+            <!-- Физическое лицо -->
+            <form name="profile" action="#" class="profile-edit__form profile-edit__individual">
+                <div class="profile-edit__block">
+                    
+                    <div class="profile-edit__block-left">
+                        <div class="log-in__input-block">
+                            <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Ваше имя</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" autocomplete="off" placeholder="Email" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">E-mail</div>
+                        </div>
+                        <div class="sign-in__password__block profile-edit__password__block">
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" autocomplete="off" readonly placeholder="Пароль" class="log-in__input profile-edit__input profile-edit__input-password">                
+                                <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible profile-edit__password-visible" onclick="showPasswordProfile(0)">                    
+                                <a class="log-in__link profile-edit__change" onclick="changeProfilePassword(0)">Изменить пароль</a>
+                                <div class="log-in__input-caption">Пароль</div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                        <div class="profile-edit__block-right">
+                        <div class="log-in__input-block">
+                            <input type="text" name="town" autocomplete="off" placeholder="Ваш город" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Ваш город</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="tel" name="phone" autocomplete="off" placeholder="Телефон" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Телефон</div>
+                        </div>
+                    </div>
+
+                </div>
+            <button href="#" class="log-in__button profile-edit__button">Сохранить</button>
+            </form>
+
+            <!-- Юридическое лицо -->
+            <form name="profile" action="#" class="profile-edit__form profile-edit__juridical">
+                <div class="profile-edit__block">
+                    
+                    <div class="profile-edit__block-left">
+                        <div class="log-in__input-block">
+                            <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Ваше имя</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" autocomplete="off" placeholder="Email" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">E-mail</div>
+                        </div>
+                        <div class="sign-in__password__block profile-edit__password__block">
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" autocomplete="off" placeholder="Пароль" readonly class="log-in__input profile-edit__input profile-edit__input-password">          
+                                <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible profile-edit__password-visible" onclick="showPasswordProfile(1)">                    
+                                <a class="log-in__link profile-edit__change" onclick="changeProfilePassword(1)">Изменить пароль</a>
+                                <div class="log-in__input-caption">Пароль</div>
+                            </div>
+                        </div>
+                        <div class="log-in__input-block profile-edit__select-block">
+                            <select type="text" name="formJuridical" placeholder="Форма юридического лица" class="log-in__input profile-edit__input profile-edit__select" id="form-juridical">
+                                <option value="" class="profile-edit__option profile-edit__option-head" hidden></option>
+                                <option value="1" class="profile-edit__option form-juridical__option">Выбор 1</option>
+                                <option value="2" class="profile-edit__option form-juridical__option">Выбор 2</option>
+                                <option value="3" class="profile-edit__option form-juridical__option">Выбор 3</option>
+                            </select>
+                            <label class="profile-edit__select-caption-text select-caption">
+                                Форма юридического лица
+                            </label>
+                            <div class="log-in__input-caption">Форма юридического лица</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="nameJuridical" autocomplete="off" placeholder="Наименование юридического лица" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Наименование юридического лица</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="INN" placeholder="ИНН" autocomplete="off" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">ИНН</div>
+                        </div>
+                    </div> 
+
+                    
+                    <div class="profile-edit__block-right">
+                        <div class="log-in__input-block">
+                            <input type="text" name="town" autocomplete="off" placeholder="Ваш город" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Ваш город</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="tel" name="phone" autocomplete="off" placeholder="Телефон" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Телефон</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="currentAccount" autocomplete="off" placeholder="Расчетный счет" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Расчетный счет</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="nameBank" autocomplete="off" placeholder="Банк наименование" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Банк наименование</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="BIK" autocomplete="off" placeholder="БИК" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">БИК</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" name="remedialAccount" autocomplete="off" placeholder="Корр. счет" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Корр. счет</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="log-in__input-block log-in__input-block-option">
+                    <input type="text" name="registeredAddress" autocomplete="off" placeholder="Юридический адрес" class="log-in__input profile-edit__input profile-edit__input__long">
+                    <div class="log-in__input-caption">Юридический адрес</div>
+                </div>
+            <button href="#" class="log-in__button profile-edit__button">Сохранить</button>
+            </form>
+
+            <!-- Монтажник -->
+            <form name="profile" action="#" class="profile-edit__form profile-edit__installer">
+                <div class="profile-edit__block">
+                    
+                    <div class="profile-edit__block-left">
+                        <div class="log-in__input-block">
+                            <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Ваше имя</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" autocomplete="off" placeholder="Email" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Email</div>
+                        </div>
+                        <div class="sign-in__password__block profile-edit__password__block">
+                            <div class="log-in__input-block">
+                                <input type="password" autocomplete="off" name="password" placeholder="Пароль" readonly class="log-in__input profile-edit__input profile-edit__input-password">
+                                
+                                <div class="log-in__input-caption">Пароль</div>
+                            </div>
+                            <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible profile-edit__password-visible" onclick="showPasswordProfile(2)">                    
+                                <a class="log-in__link profile-edit__change" onclick="changeProfilePassword(2)">Изменить пароль</a>
+                        </div>
+                        <div class="profile-edit__photo-person__block">
+                            <div class="profile-edit__photo-person__hidden-block"></div>
+                            <div class="log-in__input-block">
+                                <input type="file" name="photoPerson" id="photo-person__input" accept="image/jpeg, image/png" placeholder="Фото для профиля" class="profile-edit__select-form">
+                                <input type="text" readonly disabled name="photo-person-visible" id="photo-person-visible" class="log-in__input profile-edit__input bg-none profile-edit__photo-border">
+                                <label for="photo-person__input" class="profile-edit__select-file-text">
+                                    Фотографии для профиля
+                                </label>
+                                <label for="photo-person__input" class="profile-edit__select-file">
+                                    <img src="img/Service/Icons/selectPhoto.svg" alt="" class="profile-edit__select-file__img">
+                                    Выбрать</label>
+                                <div class="log-in__input-caption">Фото для профиля</div>
+                            </div>
+                        </div>
+                        <div class="log-in__input-block profile-edit__select-block">
+                            <select type="text" readonly name="formInstaller" id="form-installer" placeholder="Ваша специализация" class="log-in__input profile-edit__input profile-edit__select">
+                                <option value="" class="profile-edit__option" hidden></option>
+                                <option value="1" class="profile-edit__option">Выбор 1</option>
+                                <option value="2" class="profile-edit__option">Выбор 2</option>
+                                <option value="3" class="profile-edit__option">Выбор 3</option>
+                            </select>
+                            <label class="profile-edit__select-caption-text">
+                                Ваша специализация
+                            </label>
+                            <div class="log-in__input-caption select-caption">Ваша специализация</div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" readonly disabled autocomplete="off" name="nameJuridical" placeholder="Профессиональный стаж" class="log-in__input profile-edit__input profile-edit__seniority" id="profile-edit__seniority">
+                            <div class="log-in__input-caption" id="seniority-caption">Профессиональный стаж</div>
+                            <div class="profile-edit__input__arrows-block">
+                                <img src="img/Service/Icons/tableArrowUp.svg" alt="" class="profile-edit__input__arrow profile-edit__input__arrow-up" id="seniority-up">
+                                <img src="img/Service/Icons/tableArrowDown.svg" alt="" class="profile-edit__input__arrow profile-edit__input__arrow-down" id="seniority-down">
+                            </div>
+                        </div>
+                        <p class="profile-edit__input-caption">Информация о себе</p>
+                        <div class="log-in__input-block">
+                            <textarea name="personInfo" autocomplete="off" id="person-info" class="log-in__input profile-edit__input profile-edit__textarea"></textarea>
+                            <div class="log-in__input-caption">Информация о себе</div>
+                        </div>
+                        <div class="profile-edit__photo-person__block">
+                           <div class="log-in__input-block">
+                                <div class="profile-edit__photo-person__hidden-block"></div>
+                                <input type="file" multiple name="photoPersonList" id="photo-person-list__input" accept="image/jpeg, image/png" placeholder="Фото для профиля" class="profile-edit__select-form">
+                                <input type="text" readonly disabled name="photoPersonListVisible" id="photo-person-list-visible" class="log-in__input profile-edit__input bg-none profile-edit__photo-border">
+                                <label for="photo-person-list__input" class="profile-edit__select-file-text">
+                                    Фотографии для галереи
+                                </label>
+                                <label for="photo-person-list__input" class="profile-edit__select-file">
+                                    <img src="img/Service/Icons/selectPhoto.svg" alt="" class="profile-edit__select-file__img">
+                                    Выбрать</label>
+                                <p class="profile-edit__photo-input__caprtion profile-edit__input-caption">*до 30 файлов</p>
+                                <div class="log-in__input-caption">Фото для блока</div>
+                           </div>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="text" autocomplete="off" name="town" placeholder="Подпись к фото" class="log-in__input profile-edit__input">
+                            <div class="log-in__input-caption">Подпись к фото</div>
+                        </div>
+                    </div> 
+
+                    
+                    <div class="profile-edit__block-right">
+                        <div class="profile-edit__block-wrap">
+                            <div class="log-in__input-block">
+                                <input type="text" autocomplete="off" name="town" placeholder="Ваш город" class="log-in__input profile-edit__input">
+                                <div class="log-in__input-caption">Ваш город</div>
+                            </div>
+                            <div class="log-in__input-block">
+                                <input type="tel" autocomplete="off" name="phone" placeholder="Телефон" class="log-in__input profile-edit__input">
+                                <div class="log-in__input-caption">Телефон</div>
+                            </div>
+                        </div>
+                        <div class="profile-edit__social-block__wrap">
+                            <p class="profile-edit__input-caption">Социальные сети</p>
+                            <div class="profile-edit__social-block">
+                                <img src="img/Service/Social/vk.png" alt="" class="profile-edit__social-img ">
+                                <div class="log-in__input-block">
+                                    <input type="text" autocomplete="off" name="socialVk" id="social-vk" placeholder="Vkontakte" class="log-in__input profile-edit__input profile-edit__social-input">
+                                    <div class="log-in__input-caption">Vkontakte</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-edit__social-block">
+                                <img src="img/Service/Social/inst.png" alt="" class="profile-edit__social-img">
+                                <div class="log-in__input-block">
+                                    <input type="text" autocomplete="off" name="socialInst" id="social-inst" placeholder="Instagram" class="log-in__input profile-edit__input profile-edit__social-input">
+                                    <div class="log-in__input-caption">Instagram</div>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__social-block">
+                                <img src="img/Service/Social/facebook.png" alt="" class="profile-edit__social-img">
+                                <div class="log-in__input-block">
+                                    <input type="text" autocomplete="off" name="socialFacebook" id="social-facebook" placeholder="Facebook" class="log-in__input profile-edit__input profile-edit__social-input">
+                                    <div class="log-in__input-caption">Facebook</div>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__social-block">
+                                <img src="img/Service/Social/classmates.png" alt="" class="profile-edit__social-img">
+                                <div class="log-in__input-block">
+                                    <input type="text" autocomplete="off" name="socialClassmates" id="social-classmates" placeholder="Одноклассники" class="log-in__input profile-edit__input profile-edit__social-input">
+                                    <div class="log-in__input-caption">Одноклассники</div>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__social-block">
+                                <img src="img/Service/Social/youtube.png" alt="" class="profile-edit__social-img">
+                                <div class="log-in__input-block">
+                                    <input type="text" autocomplete="off" name="socialYoutube" id="social-youtube" placeholder="YouTube" class="log-in__input profile-edit__input profile-edit__social-input">
+                                    <div class="log-in__input-caption">YouTube</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            <button href="#" class="log-in__button profile-edit__button">Сохранить</button>
+            </form>
+        </div>
+        <img src="img/logoWatermark.svg" alt="" class="profile-edit__watermark-logo">
+    </section>
+    
+    <!-- Мои покупки -------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="profile-shopping">
+        <div class="content">
+            <!-- Навигация -->
+            <div class="profile-shopping__nav">
+                <p class="profile-shopping__nav__item profile-shopping__nav__item-activate">Все</p>
+                <p class="profile-shopping__nav__item">Текущие</p>
+                <p class="profile-shopping__nav__item">Заверщенные</p>
+                <p class="profile-shopping__nav__item">Отмененные</p>
+            </div>
+
+            <!-- Таблица с информацией о покупке -->
+            <div class="profile-shopping__table">
+                <!-- Шапка таблицы -->
+                <div class="profile-shopping__table__row profile-shopping__table__row__head">
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number">
+                        Номер заказа
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        Дата
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        Сумма
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        Скидка,%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        Оплата
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        Статус
+                    </div>
+                </div>
+                <!-- Тело таблицы -->
+                <!-- Начало строки -->
+                <div class="profile-shopping__table__row-table__body profile-shopping__table__row profile-shopping__table__row__body" >
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number shopping-logo">
+                        Заказ №112
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        23.11.2021
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        10 500
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        9%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        <span class="paid">Оплачен</span> <span class="unpaid">Не оплачен</span>
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>
+                    </div>
+                </div>
+                
+                    <!-- Внутренняя таблица с полной информацией о покупке -->
+                    <div class="profile-shopping__table__pocket">
+                        <!-- Шапка внутренней таблицы -->
+                        <div class="profile-shopping__table__row profile-shopping__table__pocket__row profile-shopping__table__row__head profile-shopping__table__pocket__row__head">
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__row__section__number profile-shopping__table__pocket__row__section__product">
+                                Товар
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                Цена
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                Количество
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__sum">
+                                Сумма
+                            </div>
+                        </div>
+                        <!-- Тело внутренней таблицы -->
+                        <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+    
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+                            <!-- Итого -->
+                            
+                            <div class="profile-shopping__table__pocket__delivery-row"> Доставка: <span class="profile-shopping__table__pocket__delivery-price">250 руб</span></div>            
+                            <div class="profile-shopping__table__pocket__summary-row"> Итого: <span class="profile-shopping__table__pocket__summary-price">32 200 руб</span></div>
+                
+                    <!-- Конец внутренней таблицы -->
+                    </div>
+                <!-- Конец строки -->
+                
+                <!-- Начало строки -->
+                <div class="profile-shopping__table__row-table__body profile-shopping__table__row profile-shopping__table__row__body" >
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number shopping-logo">
+                        Заказ №112
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        23.11.2021
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        10 500
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        9%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        <span class="paid">Оплачен</span> <span class="unpaid">Не оплачен</span>
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>
+                    </div>
+                </div>
+                
+                    <!-- Внутренняя таблица с полной информацией о покупке -->
+                    <div class="profile-shopping__table__pocket">
+                        <!-- Шапка внутренней таблицы -->
+                        <div class="profile-shopping__table__row profile-shopping__table__pocket__row profile-shopping__table__row__head profile-shopping__table__pocket__row__head">
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__row__section__number profile-shopping__table__pocket__row__section__product">
+                                Товар
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                Цена
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                Количество
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__sum">
+                                Сумма
+                            </div>
+                        </div>
+                        <!-- Тело внутренней таблицы -->
+                        <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+    
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+                            <!-- Итого -->
+                            
+                            <div class="profile-shopping__table__pocket__delivery-row"> Доставка: <span class="profile-shopping__table__pocket__delivery-price">250 руб</span></div>            
+                            <div class="profile-shopping__table__pocket__summary-row"> Итого: <span class="profile-shopping__table__pocket__summary-price">32 200 руб</span></div>
+                            
+                    <!-- Конец внутренней таблицы -->
+                    </div>
+                <!-- Конец строки -->
+
+                <!-- Начало строки -->
+                <div class="profile-shopping__table__row-table__body profile-shopping__table__row profile-shopping__table__row__body" >
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number shopping-logo">
+                        Заказ №112
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        23.11.2021
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        10 500
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        9%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        <span class="paid">Оплачен</span> <span class="unpaid">Не оплачен</span>
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>
+                    </div>
+                </div>
+                
+                    <!-- Внутренняя таблица с полной информацией о покупке -->
+                    <div class="profile-shopping__table__pocket">
+                        <!-- Шапка внутренней таблицы -->
+                        <div class="profile-shopping__table__row profile-shopping__table__pocket__row profile-shopping__table__row__head profile-shopping__table__pocket__row__head">
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__row__section__number profile-shopping__table__pocket__row__section__product">
+                                Товар
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                Цена
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                Количество
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__sum">
+                                Сумма
+                            </div>
+                        </div>
+                        <!-- Тело внутренней таблицы -->
+                        <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+    
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+                            <!-- Итого -->
+                            
+                            <div class="profile-shopping__table__pocket__delivery-row"> Доставка: <span class="profile-shopping__table__pocket__delivery-price">250 руб</span></div>            
+                            <div class="profile-shopping__table__pocket__summary-row"> Итого: <span class="profile-shopping__table__pocket__summary-price">32 200 руб</span></div>
+                            
+                    <!-- Конец внутренней таблицы -->
+                    </div>
+                <!-- Конец строки -->
+
+                <!-- Начало строки -->
+                <div class="profile-shopping__table__row-table__body profile-shopping__table__row profile-shopping__table__row__body" >
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number shopping-logo">
+                        Заказ №112
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        23.11.2021
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        10 500
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        9%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        <span class="paid">Оплачен</span> <span class="unpaid">Не оплачен</span>
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>
+                    </div>
+                </div>
+                
+                    <!-- Внутренняя таблица с полной информацией о покупке -->
+                    <div class="profile-shopping__table__pocket">
+                        <!-- Шапка внутренней таблицы -->
+                        <div class="profile-shopping__table__row profile-shopping__table__pocket__row profile-shopping__table__row__head profile-shopping__table__pocket__row__head">
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__row__section__number profile-shopping__table__pocket__row__section__product">
+                                Товар
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                Цена
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                Количество
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__sum">
+                                Сумма
+                            </div>
+                        </div>
+                        <!-- Тело внутренней таблицы -->
+                        <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+    
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+                            <!-- Итого -->
+                            
+                            <div class="profile-shopping__table__pocket__delivery-row"> Доставка: <span class="profile-shopping__table__pocket__delivery-price">250 руб</span></div>            
+                            <div class="profile-shopping__table__pocket__summary-row"> Итого: <span class="profile-shopping__table__pocket__summary-price">32 200 руб</span></div>
+                            
+                    <!-- Конец внутренней таблицы -->
+                    </div>
+                <!-- Конец строки -->
+
+                <!-- Начало строки -->
+                <div class="profile-shopping__table__row-table__body profile-shopping__table__row profile-shopping__table__row__body" >
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__number shopping-logo">
+                        Заказ №112
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__date">
+                        23.11.2021
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__sum">
+                        10 500
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__stock">
+                        9%
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__payment">
+                        <span class="paid">Оплачен</span> <span class="unpaid">Не оплачен</span>
+                    </div>
+
+                    <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>
+                    </div>
+                </div>
+                
+                    <!-- Внутренняя таблица с полной информацией о покупке -->
+                    <div class="profile-shopping__table__pocket">
+                        <!-- Шапка внутренней таблицы -->
+                        <div class="profile-shopping__table__row profile-shopping__table__pocket__row profile-shopping__table__row__head profile-shopping__table__pocket__row__head">
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__row__section__number profile-shopping__table__pocket__row__section__product">
+                                Товар
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                Цена
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                Количество
+                            </div>
+        
+                            <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__sum">
+                                Сумма
+                            </div>
+                        </div>
+                        <!-- Тело внутренней таблицы -->
+                        <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+    
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+    
+                            <!-- Начало внутренней строки -->
+                            <div class="profile-shopping__table__row profile-shopping__table__row__body">
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__product">
+                                    Кран шаровый PN 10
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__stock">
+                                    9%
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__price">
+                                    213 руб
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__pocket__row__section profile-shopping__table__pocket__row__section__count">
+                                    50 шт
+                                </div>
+            
+                                <div class="profile-shopping__table__row__section profile-shopping__table__row__section__status profile-shopping__table__pocket__row__section__sum">
+                                    10 650 руб
+                                </div>
+                            </div>
+                            <!-- Конец внутренней строки -->
+                            <!-- Итого -->
+                            
+                            <div class="profile-shopping__table__pocket__delivery-row"> Доставка: <span class="profile-shopping__table__pocket__delivery-price">250 руб</span></div>            
+                            <div class="profile-shopping__table__pocket__summary-row"> Итого: <span class="profile-shopping__table__pocket__summary-price">32 200 руб</span></div>
+                            
+                    <!-- Конец внутренней таблицы -->
+                    </div>
+                <!-- Конец строки -->
+            </div>  
+        </div>
+        <!-- Конец таблицы -->
+
+
+        <!-- Начало мобильной таблицы -->
+        <div class="profile-shopping__table-mobile" id="profile-shopping__table-mobile">
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+
+            <!-- Начало строки -->
+           <div class="profile-shopping__table__row-wrapper-mobile">
+                <div class="profile-shopping__table__row-mobile">
+                    <div class="profile-shopping__table__row-info-mobile">
+                        <div class="profile-shopping__table__row__price-mobile">
+                            <span class="profile-shopping__table__row__price-num">10 500</span>
+                            ₽
+                        </div>
+    
+                        <div class="profile-shopping__table__row__number-mobile">
+                            Заказ №112
+                        </div>
+    
+                        <div class="profile-shopping__table__row__date-mobile">
+                            Дата <span class="profile-shopping__table__row__date-number-mobile">23.11.2021</span>
+                        </div>
+                    </div>
+                    <div class="profile-shopping__table__row-status-mobile">
+                        <span class="performed">Выполнено</span> <span class="unfullfiled">Не выполнен</span> <span class="accepted">Принят, ожидается оплата</span>               
+                    </div>
+                </div>
+           </div>
+           <!-- Конец строки -->
+        </div>
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <!-- Полная информация покупки -->
+        <div class="profile-shopping__table__pocket-mobile">
+            <div class="profile-shopping__table__pocket__back-mobile">
+                <img src="img/Mobile/Icons/iconArrowLeft.svg" alt="" class="profile-shopping__table__pocket__back__icon-mobile">
+                <span class="profile-shopping__table__pocket__back__text-mobile">Мои покупки</span>
+            </div>
+    
+            <div class="profile-shopping__table__pocket__info-mobile">
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Номер заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__number-mobile">Заказ №112</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Статус заказа
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__status-mobile">Выполнен</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Создан
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__date-mobile">23.11.2021</span>
+                </figure>
+
+                <figure class="profile-shopping__table__pocket__info__item-mobile">
+                    <figcaption class="profile-shopping__table__pocket__info__item-caption-mobile">
+                        Стоимость
+                    </figcaption>
+                    <span class="profile-shopping__table__pocket__info__price-mobile">10500</span> ₽
+                </figure>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+
+                <div class="profile-shopping__table__pocket__info__buy-mobile">
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__name-mobile">Кран шаровый PN10</span></p>
+                    <p class="profile-shopping__table__pocket__info__buy__text-mobile"><span class="profile-shopping__table__pocket__info__buy__price-mobile">213</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец полной информации покупки -->
+
+        <img src="img/logoWatermark.svg" alt="" class="profile-edit__watermark-logo">
+    </section>
+    <footer class="footer">
+        <div class="content">
+            <div class="footer__wrap">
+                <div class="footer__title">
+                    <figure class="footer__logo-block">
+                        <img src="img/Logo/logoFooter.svg" alt="" class="footer__logo">
+                        <figcaption class="footer__caption">Пользовательское соглашение</figcaption>
+                    </figure>
+                    <figure class="footer__hotline">
+                        8 800 777 77 68
+                        <figcaption class="footer__caption">горячая линия</figcaption>
+                    </figure>
+
+                    <figure class="footer__social">
+                        Присоединяйся к нам в соц. сети
+                        <figcaption class="footer__social__icons">
+                            <a href="#"><img src="img/Icons/iconFacebook.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconTwitter.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconInstagramm.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconYoutube.svg" alt="" class="footer__social__icon"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">О компании</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">О нас</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Команда</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Вакансии</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 495 540 52 62
+                                <figcaption class="footer__caption">офис в Москве</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Профессионалам</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Партнерам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Монтажникам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Проектировщикам</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 925 740 52 62
+                                <figcaption class="footer__caption">офис в Краснодаре</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Системы РТП</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы водоснабжения</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы канализации</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы отопления</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 383 383 04 414
+                                <figcaption class="footer__caption">офис в Новосибирске</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/cabinet.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

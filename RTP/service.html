@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Услуги</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="content">
+                <div class="wrapper">
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Магазин</a>
+                        <a href="service.html" class="menu__item">Услуги</a>
+                        <a href="#" class="menu__item">Системы RTP</a>
+                        <a href="#" class="menu__item">О компании</a>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </div>
+                </div>
+                <div class="person">
+                    <span class="person__contact person__item">8 800 777 77 68</span>
+                    <span class="person__item" onclick="openLogIn()"><img src="img/Icons/iconPerson.svg" alt="" class="person-icon">Вход</span>
+                    <span class="person__item"><img src="img/Icons/iconBasket.svg" alt=""></span>
+                    <span class="person__item"><img src="img/Icons/iconSearch.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="modal__log-in">
+                <div class="log-in">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title">Вход</p>
+                    <form action="#" class="log-in__form">
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                            <span class="log-in__input-caption">E-mail</span>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="password" name="password" placeholder="Пароль" class="log-in__input">
+                            <span class="log-in__input-caption">Пароль</span>
+                            <a href="#" class="log-in__link">Забыли пароль?</a>
+                        </div>
+                        <button href="#" class="log-in__button">Войти</button>
+                    </form>
+                    <div class="log-in__sign-in__block">
+                        <hr><span class="log-in__link">...или создать аккаунт</span><hr>
+                    </div>
+                    <div class="log-in__features">
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Отслеживание статуса
+                                заказа в личном кабинете </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Просмотр истории заказов </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Сохранение адресов доставки </p>
+                        </div>
+                    </div>
+                    <a class="store__main__btn sign-in__btn" onclick="openSignIn()">Регистрация</a>
+                </div>
+            
+                <div class="sign-in log-in">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title sign-in__title">Регистрация</p>
+                    <div class="sign__in__radio-form">
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(0)"><input type="radio" class="sign__in__radio" checked>Физическое лицо</p>
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(1)"><input type="radio" class="sign__in__radio">Юридическое лицо</p>
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(2)"><input type="radio" class="sign__in__radio">Монтажник</p>
+                    </div>
+            
+                    <form action="#" class="log-in__form sign-in__form">
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                            <span class="log-in__input-caption">E-mail</span>
+                        </div>
+                        <div class="sign-in__password__block">
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" placeholder="Пароль" id="sign-in__password" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">Пароль</span>
+                                <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible" onclick="showPassword()">
+                            </div>
+                            <div class="log-in__input-block">
+                                <input type="password" name="passwordConfirm" placeholder="Подтвердить пароль" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">Подтвердить пароль</span>
+                            </div>
+                        </div>        
+                        <input type="text" name="town" placeholder="Ваш город" class="log-in__input sign-in__input">
+                    </form>
+            
+                    <div class="log-in__features sign-in__features">
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Отслеживание статуса
+                                заказа в личном кабинете </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Просмотр истории заказов </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Сохранение адресов доставки </p>
+                        </div>
+                    </div>
+                    <a class="store__main__btn sign-in__btn" onclick="openSignInThanks()">Зарегистрироваться</a>
+                    <div class="sign-in__confidential">
+                        <img src="img/Icons/iconConfidential.svg" alt="" class="sign-in__confidential__img">
+                        <p class="sign-in__confidential__text">Нажимая кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> </p>
+                    </div>
+                </div>
+                
+                <!-- Благодарность -->
+                <div class="log-in sign-in__thanks">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title sign-in__thanks__title">Спасибо!</p>
+                    <p class="sign-in__thanks-text">Вы успешно зарегистрировались на сайте.
+                        На ваш e-mail отправлено письмо с данными для входа.
+                    </p>
+                    <a href="#" class="store__secondary__btn sign-in__thanks__btn" onclick="signInEnd()">Ок</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="content">
+                <div class="header__logo-block">
+                    <div class="header__burger__wrap"><img src="img/Mobile/Icons/iconBurger.svg" alt="" class="header__burger" id="burger"></div>
+                    <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <img src="img/Icons/iconBasket.svg" alt="" class="header__basket">
+                </div>
+                <div class="header__burger-block">
+                    
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__log-in" id="mobile-item-log-in">
+                            <div class="burger-menu__item burger-menu__item__log-in">
+                                <img src="img/Mobile/Icons/iconLogIn.svg" alt="" class="burger-menu__item__log-in__icon">
+                                <p>Вход/Регистрация</p>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap">
+                            <div class="burger-menu__item" id="mobile-item-shop"><p>Магазин </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+
+                            <div class="burger-menu__subitem__wrap" id="burger-menu__subitem__wrap-shop">
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconAlpha.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Alpha</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы и фитинги из полипропилена
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconDelta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Delta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы PE-X/EVOH и аксиальные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconSigma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Sigma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Латунные краны и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconOmega.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Omega</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы для тёплого пола
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconBeta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Beta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Канализационые трубы и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconGamma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Gamma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы ПНД и компрессионные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div> 
+    
+                                <div class="burger-menu__subitem">
+                                    <div class="burger-menu__subitem__text burger-menu__subitem__text__tools">Инструменты <span class="bold">для монтажа</span></div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-services">
+                            <div class="burger-menu__item"><p>Услуги </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-RTP">
+                            <div class="burger-menu__item"><p>Системы RTP </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-company">
+                            <div class="burger-menu__item"><p>О компании </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-contacts">
+                            <div class="burger-menu__item"><p>Контакты </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__hotline">
+                            <div class="burger-menu__item burger-menu__item__hotline-block">
+                                <figure class="burger-menu__item__hotline">
+                                    <figcaption class="burger-menu__item__hotline-caption">Горячая линия</figcaption>
+                                    8 800 777 77 68
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__search" id="mobile-item-search">
+                            <div class="burger-menu__item">
+                                <input type="text" placeholder="Поиск по сайту" class="burger-menu__item__search">
+                                <img src="img/Icons/iconSearch.svg" alt="" class="burger-menu__item__img__search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile__log-in__wrapper" id="mobile__log-in__wrapper" >
+                    <div class="mobile__log-in__switch">
+                        <p class="mobile__log-in__switch-log switch-log-activate">Вход</p>
+                        <p class="mobile__log-in__switch-log">Регистрация</p>
+                    </div>
+                    
+                    <div class="mobile__log-in" id="mobile__log-in">
+                        <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close mobile_modal-img__close-block__img-close">
+                        <p class="log-in__title">Вход</p>
+                        <form action="#" class="log-in__form">
+                            <div class="log-in__input-block">
+                                <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">E-mail</span>
+                            </div>
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" placeholder="Пароль" class="log-in__input">
+                                <span class="log-in__input-caption">Пароль</span>
+                                <a href="#" class="log-in__link">Забыли пароль?</a>
+                            </div>
+                            <button href="#" class="log-in__button">Войти</button>
+                        </form>
+                    </div>
+                
+                    <div class="mobile__log-in mobile__sign-in" id="mobile__sign-in">
+                        <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close mobile_modal-img__close-block__img-close">
+                        <p class="log-in__title sign-in__title">Регистрация</p>
+                        <div class="sign__in__radio-form">
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(3)"><input type="radio" class="sign__in__radio" checked>Физическое лицо</p>
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(4)"><input type="radio" class="sign__in__radio">Юридическое лицо</p>
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(5)"><input type="radio" class="sign__in__radio">Монтажник</p>
+                        </div>
+                
+                        <form action="#" class="log-in__form sign-in__form">
+                            <div class="log-in__input-block">
+                                <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">E-mail</span>
+                            </div>
+                            <div class="sign-in__password__block">
+                                <div class="log-in__input-block">
+                                    <input type="password" name="password" placeholder="Пароль" id="sign-in__password" class="log-in__input sign-in__input">
+                                    <span class="log-in__input-caption">Пароль</span>
+                                    <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible" onclick="showPassword()">
+                                </div>
+                                <div class="log-in__input-block">
+                                    <input type="password" name="passwordConfirm" placeholder="Подтвердить пароль" class="log-in__input sign-in__input">
+                                    <span class="log-in__input-caption">Подтвердить пароль</span>
+                                </div>
+                            </div>        
+                            <input type="text" name="town" placeholder="Ваш город" class="log-in__input sign-in__input">
+                        <button class="store__main__btn sign-in__btn" onclick="openSignInThanks()">Зарегистрироваться</button>
+                        </form>
+                        <div class="sign-in__confidential">
+                            <img src="img/Icons/iconConfidential.svg" alt="" class="sign-in__confidential__img">
+                            <p class="sign-in__confidential__text">Нажимая кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+    
+    <!-- Контент ------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="banner__block">
+            <div class="banner__wrap">
+                <div class="banner__anchor-block">
+                    <a href="index.html" class="banner__anchor">Главная</a>
+                    <div class="banner__anchor-now"><span class="bold">•</span> Каталог монтажников</div>
+                </div>
+                <h1 class="store__title banner__title">Каталог <span class="semi-bold">монтажников</span></h1>
+                <p class="store__intro banner__intro">Здесь вы найдете профессионала для установки любого вида отопительных и
+                    канализационных систем в квартире или в вашем загородном доме</p>
+                <a href="#" class="store__main__btn banner__main__btn">Заказать монтаж</a>
+                <a href="#" class="store__secondary__btn banner__secondary__btn">Стать монтажником</a>
+            </div>
+        </div>
+    </section>
+    <!-- Фильтры -->
+    <section class="filters">
+        <div class="content">
+            <div class="wrapper">
+                <div class="filters__title">Фильтр по портфолио</div>
+                <div class="select" onclick="listChange(0)">
+                    <span class="select__head">Город</span>
+                    <ul class="select__list none">
+                        <li class="select__option">Москва</li>
+                        <li class="select__option">Санкт-Петербург</li>
+                        <li class="select__option">Краснодар</li>
+                      </ul>
+                </div>
+
+                <div class="select" onclick="listChange(1)">
+                    <span class="select__head">Специализация</span>
+                    <ul class="select__list none">
+                        <li class="select__option">Радиаторное отопление</li>
+                        <li class="select__option">Теплые полы</li>
+                        <li class="select__option">Бурение скважин</li>
+                        <li class="select__option">Монтаж колодцев</li>
+                        <li class="select__option">Установка газгольдеров</li>
+                        <li class="select__option">Разводка электрики</li>
+                      </ul>
+                </div>
+
+                <div class="select" onclick="listChange(2)">
+                    <span class="select__head">Типы объектов</span>
+                    <ul class="select__list none">
+                        <li class="select__option">Москва</li>
+                        <li class="select__option">Санкт-Петербург</li>
+                        <li class="select__option">Краснодар</li>
+                      </ul>
+                </div>
+
+                <div class="select" onclick="listChange(3)">
+                    <span class="select__head">Стаж(лет)</span>
+                    <ul class="select__list none">
+                        <li class="select__option">Москва</li>
+                        <li class="select__option">Санкт-Петербург</li>
+                        <li class="select__option">Краснодар</li>
+                      </ul>
+                </div>
+
+                <div class="select" onclick="listChange(4)">
+                    <span class="select__head">По рейтингу</span>
+                    <ul class="select__list none">
+                        <li class="select__option">Москва</li>
+                        <li class="select__option">Санкт-Петербург</li>
+                        <li class="select__option">Краснодар</li>
+                      </ul>
+                </div>
+
+                <a href="" class="store__main__btn select__main__btn">Подобрать</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters-mobile">
+        <a href="#"><img src="img/Mobile/Icons/arrowLeft.svg" alt="" class="back" id="back"></a>
+        <div class="services__title-mobile">Каталог <span class="medium">монтажников</span></div>
+        <div class="filters__title-mobile">
+            Фильтр по портфолио
+        </div>
+        <div class="filters__wrapper-mobile">
+            <select name="town" id="filters-town" class="filters__select-mobile">
+                <option value="" hidden class="filters__option-mobile">Город</option>
+                <option value="1" class="filters__option-mobile">Москва</option>
+                <option value="2" class="filters__option-mobile">Краснодар</option>
+                <option value="3" class="filters__option-mobile">Санкт-Петербург</option>
+            </select>
+            <img src="img/Mobile/Icons/iconFilters.svg" alt="" class="filters__icon" id="filters__icon">
+        </div>
+    </section>
+
+    <section class="filters-full-mobile" id="filters-full-mobile">
+        <img src="img/Mobile/Icons/filtersClose.svg" alt="" class="filters-full__close-mobile" id="filters__close-mobile">
+        <div class="filters-full__wrapper-mobile">
+            <div class="filters-full__form-mobile">
+                <div class="filters-full__form__title-mobile">
+                    Специализация
+                </div>
+                <div class="filters-full__form-block-mobile">
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="радиаторное отопление" id="radiant" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">радиаторное отопление</p>
+                        <label for="radiant" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="теплые полы" id="floors" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">теплые полы</p>
+                        <label for="floors" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="бурение скважин" id="drilling" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">бурение скважин</p>
+                        <label for="drilling" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="монтаж колодцев" id="well" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">монтаж колодцев</p>
+                        <label for="well" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="установка газгольдеров" id="gasgolder" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">установка газгольдеров</p>
+                        <label for="gasgolder" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="разводка электрики" id="electic" class="filters-full__form__item__input-mobile"><p class="filters-full__form__item-mobile">разводка электрики</p>
+                        <label for="electic" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="filters-full__form-mobile">
+                <div class="filters-full__form__title-mobile">
+                    Типы объектов
+                </div>
+                <div class="filters-full__form-block-mobile">
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType1" id="objectType1" class="filters-full__form__item__input-mobile">
+                        <label for="objectType1" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType2" id="objectType2" class="filters-full__form__item__input-mobile">
+                        <label for="objectType2" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType3" id="objectType3" class="filters-full__form__item__input-mobile">
+                        <label for="objectType3" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType4" id="objectType4" class="filters-full__form__item__input-mobile">
+                        <label for="objectType4" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType5" id="objectType5" class="filters-full__form__item__input-mobile">
+                        <label for="objectType5" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="objectType6" id="objectType6" class="filters-full__form__item__input-mobile">
+                        <label for="objectType6" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters-full__form-mobile">
+                <div class="filters-full__form__title-mobile">
+                    Стаж (лет)
+                </div>
+
+                <div class="profile__basket__table__row__count-change__wrap-mobile">
+                    <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__remove-mobile" id="filters__seniority-down">
+                    <div class="profile__basket__table__row__count-mobile buy-count-mobile" id="filters__seniority">2</div>
+                    <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__add-mobile" id="filters__seniority-up">
+                </div>
+            </div>
+
+            <div class="filters-full__form-mobile">
+                <div class="filters-full__form__title-mobile">
+                    По рейтингу
+                </div>
+
+                <div class="filters-full__form-block-mobile">
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="ratingType1" id="ratingType1" class="filters-full__form__item__input-mobile">
+                        <label for="ratingType1" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+
+                    <div class="filters-full__form__item__block-mobile">
+                        <input type="checkbox" value="ratingType2" id="ratingType2" class="filters-full__form__item__input-mobile">
+                        <label for="ratingType2" class="filters-full__form__item__hidden-check-mobile"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Монтажники -->
+    <section class="installers">
+        <div class="content">
+            <div class="wrapper">
+                <div class="installers__block">
+                    <!-- Карточка сотрудников-->
+                    <div class="installers__card"> 
+                        <img src="img/Service/Installers/installer.png" alt="" class="installers__card__img">
+                        <div class="installers__card__offer">
+                            <figure class="installers__card__offer__title">
+                                <span class="installer-name">Тимофеев Сергей</span><br>
+                                <figcaption class="installers__card__offer__title-caption">
+                                    г.Санкт-Петербург
+                                </figcaption>
+                            </figure>
+    
+                            <div class="installers__card__offer__reputation">
+                                <div class="installers__card__offer__reputation__rating">
+                                    <img src="img/Service/Icons/star.svg" alt="" class="installers__card__offer__reputation__rating__img">
+                                    <span class="installers__card__offer__reputation___num">4,9</span>
+                                </div>
+                                <div class="installers__card__offer__reputation__reviews">
+                                    <img src="img/Service/Icons/reviews.svg" alt="" class="installers__card__offer__reputation__reviews__img">
+                                    <span class="installers__card__offer__reputation___num">30 отзывов</span>
+                                </div>
+                            </div>
+                            
+                            <div class="installers__card__offer__specialty">
+                                <span class="installers__card__offer__specialty__text">Специализация: </span>
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Радиаторное отопление
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/radiantHeating.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/radiantHeatingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Теплые полы
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/warmFloors.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/warmFloorsText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Бурение скважин
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/drilling.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/drillingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Монтаж колодцев
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/wellInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/wellInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Установка газгольдеров
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Разводка электрики
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/electricInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/electricInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+                            </div>
+                            <div class="installers__card__offer__seniority">
+                                Стаж: <span class="installers__card__offer__seniority__num">12 лет</span>
+                            </div>
+                            <div class="installers__card__offer__btn">
+                                <a href="" class="store__main__btn">Оставить заявку</a>
+                                <a href="expert.html" class="store__secondary__btn">Перейти в профиль</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Конец карточки -->
+                    <!-- ---------------------------------------------------------------------------------------------- -->
+                    <!-- Карточка сотрудников-->
+                    <div class="installers__card">
+                        <img src="img/Service/Installers/installer2.png" alt="" class="installers__card__img">
+                        <div class="installers__card__offer">
+                            <figure class="installers__card__offer__title">
+                                <span class="installer-name">Денисов Дмитрий Сергеевич</span><br>
+                                <figcaption class="installers__card__offer__title-caption">
+                                    г.Москва
+                                </figcaption>
+                            </figure>
+    
+                            <div class="installers__card__offer__reputation">
+                                <div class="installers__card__offer__reputation__rating">
+                                    <img src="img/Service/Icons/star.svg" alt="" class="installers__card__offer__reputation__rating__img">
+                                    <span class="installers__card__offer__reputation___num">5,0</span>
+                                </div>
+                                <div class="installers__card__offer__reputation__reviews">
+                                    <img src="img/Service/Icons/reviews.svg" alt="" class="installers__card__offer__reputation__reviews__img">
+                                    <span class="installers__card__offer__reputation___num">58 отзывов</span>
+                                </div>
+                            </div>
+                            
+                            <div class="installers__card__offer__specialty">
+                                <span class="installers__card__offer__specialty__text">Специализация: </span>
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Радиаторное отопление
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/radiantHeating.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/radiantHeatingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Теплые полы
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/warmFloors.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/warmFloorsText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Бурение скважин
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/drilling.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/drillingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Монтаж колодцев
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/wellInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/wellInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Установка газгольдеров
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Разводка электрики
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/electricInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/electricInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+
+                            </div>
+                            <div class="installers__card__offer__seniority">
+                                Стаж: <span class="installers__card__offer__seniority__num">8 лет</span>
+                            </div>
+                            <div class="installers__card__offer__btn">
+                                <a href="" class="store__main__btn">Оставить заявку</a>
+                                <a href="" class="store__secondary__btn">Перейти в профиль</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Конец карточки -->
+                    <!-- ---------------------------------------------------------------------------------------- -->
+                    <!-- Карточка сотрудников-->
+                    <div class="installers__card">
+                        <img src="img/Service/Installers/installer3.png" alt="" class="installers__card__img">
+                        <div class="installers__card__offer">
+                            <figure class="installers__card__offer__title">
+                                <span class="installer-name">Федотов Егор Степанович</span><br>
+                                <figcaption class="installers__card__offer__title-caption">
+                                    г.Москва
+                                </figcaption>
+                            </figure>
+    
+                            <div class="installers__card__offer__reputation">
+                                <div class="installers__card__offer__reputation__rating">
+                                    <img src="img/Service/Icons/star.svg" alt="" class="installers__card__offer__reputation__rating__img">
+                                    <span class="installers__card__offer__reputation___num">4,5</span>
+                                </div>
+                                <div class="installers__card__offer__reputation__reviews">
+                                    <img src="img/Service/Icons/reviews.svg" alt="" class="installers__card__offer__reputation__reviews__img">
+                                    <span class="installers__card__offer__reputation___num">9 отзывов</span>
+                                </div>
+                            </div>
+                            
+                            <div class="installers__card__offer__specialty">
+                                <span class="installers__card__offer__specialty__text">Специализация: </span>
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Радиаторное отопление
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/radiantHeating.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/radiantHeatingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Теплые полы
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/warmFloors.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/warmFloorsText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Бурение скважин
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/drilling.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/drillingText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Монтаж колодцев
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/wellInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/wellInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Установка газгольдеров
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/gasholderInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+                                <div class="installers__card__offer__specialty__img__block">
+                                    <div class="installers__card__offer__specialty__img__text">
+                                        Разводка электрики
+                                    </div>
+                                    <img src="img/Service/Icons/Specialty/electricInstallation.png" alt="" class="installers__card__offer__specialty__img">
+                                    <img src="img/Service/Icons/Specialty/electricInstallationText.png" alt="" class="installers__card__offer__specialty__img installers__card__offer__specialty__img__hidden">
+                                </div>
+
+
+                            </div>
+                            <div class="installers__card__offer__seniority">
+                                Стаж: <span class="installers__card__offer__seniority__num">14 лет</span>
+                            </div>
+                            <div class="installers__card__offer__btn">
+                                <a href="" class="store__main__btn">Оставить заявку</a>
+                                <a href="" class="store__secondary__btn">Перейти в профиль</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Конец карточки -->
+                    <!-- ---------------------------------------------------------------------------------- -->
+                    <a href="" class="service__more store__main__btn">Показать еще</a>
+
+                    <!-- Ответы на вопросы -->
+                    <div class="questions"> 
+                        <h3 class="questions__title"><span class="semi-bold">Ответы</span> на часто задаваемые вопросы</h3>
+                        <div class="wrapper">
+                            <div class="questions__column questions__column__left">
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(0)">Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">01</div>
+                                </div>
+
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(1)" >Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">02</div>
+                                </div>
+
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(2)">Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">03</div>
+                                </div>
+                            </div>
+
+                            <div class="questions__column questions__column__right">
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(3)">Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">04</div>
+                                </div>
+
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(4)">Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">05</div>
+                                </div>
+
+                                <div class="questions__wrap">
+                                    <div class="questions__block">
+                                        <h5 class="questions__block__title" onclick="question(5)">Есть ли у вас гарантии на изделия?</h5>
+                                        <div class="questions__block__intro none">Гарантия распространяется на трубы и фитинги РТП. 
+                                            Гарантийный срок составляет от 5 до 10 лет с момента 
+                                            приобретения - в зависимости от типа продукции. </div>
+                                        <hr class="questions__block__line">
+                                    </div>
+                                    <div class="questions__block-number">06</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="footer__wrap">
+                <div class="footer__title">
+                    <figure class="footer__logo-block">
+                        <img src="img/Logo/logoFooter.svg" alt="" class="footer__logo">
+                        <figcaption class="footer__caption">Пользовательское соглашение</figcaption>
+                    </figure>
+                    <figure class="footer__hotline">
+                        8 800 777 77 68
+                        <figcaption class="footer__caption">горячая линия</figcaption>
+                    </figure>
+
+                    <figure class="footer__social">
+                        Присоединяйся к нам в соц. сети
+                        <figcaption class="footer__social__icons">
+                            <a href="#"><img src="img/Icons/iconFacebook.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconTwitter.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconInstagramm.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconYoutube.svg" alt="" class="footer__social__icon"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">О компании</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">О нас</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Команда</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Вакансии</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 495 540 52 62
+                                <figcaption class="footer__caption">офис в Москве</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Профессионалам</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Партнерам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Монтажникам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Проектировщикам</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 925 740 52 62
+                                <figcaption class="footer__caption">офис в Краснодаре</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Системы РТП</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы водоснабжения</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы канализации</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы отопления</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 383 383 04 414
+                                <figcaption class="footer__caption">офис в Новосибирске</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile__footer__wrap footer__wrap">
+                <div class="footer__title">
+                    <figure class="footer__logo-block">
+                        <img src="img/Logo/logoFooter.svg" alt="" class="footer__logo">
+                    </figure>
+
+                    <figure class="footer__social">
+                        Присоединяйтесь к нам в соц. сети
+                        <figcaption class="footer__social__icons">
+                            <a href="#"><img src="img/Icons/iconFacebook.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconTwitter.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconInstagramm.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconYoutube.svg" alt="" class="footer__social__icon"></a>
+                        </figcaption>
+                    </figure>
+
+                    <div class="footer__hotline">
+                        <p class="footer__hotline__caption">горячая линия</p>
+                        8 800 777 77 68
+                    </div>
+
+                    
+                </div>
+
+                <div class="footer__info">
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <div>
+                                    <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                    +7 495 540 52 62
+                                </div>
+                                <figcaption class="footer__caption">офис в Москве</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <div>
+                                    <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                    <e-mail>info@rosturplast.ru</e-mail>
+                                </div>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <div>
+                                    <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                    +7 925 740 52 62
+                                </div>
+                                <figcaption class="footer__caption">офис в Краснодаре</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <div>
+                                    <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                    <e-mail>info@rosturplast.ru</e-mail>
+                                </div>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                               <div>
+                                    <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                    +7 383 383 04 414
+                               </div>
+                                <figcaption class="footer__caption">офис в Новосибирске</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <div>
+                                    <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                    <e-mail>info@rosturplast.ru</e-mail>
+                                </div>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="footer__menu">
+                        <div class="footer__menu__title">Меню сайта</div>
+                        <div class="footer__menu__item">
+                            <div class="footer__menu__item__wrapper">
+                                <p class="footer__menu__item__text">Магазин</p>
+                                <img src="img/Mobile/Icons/footerMenuArrow.svg" alt="" class="footer__menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="footer__menu__item">
+                            <div class="footer__menu__item__wrapper">
+                                <p class="footer__menu__item__text">Услуги</p>
+                                <img src="img/Mobile/Icons/footerMenuArrow.svg" alt="" class="footer__menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="footer__menu__item">
+                            <div class="footer__menu__item__wrapper">
+                                <p class="footer__menu__item__text">Системы RTP</p>
+                                <img src="img/Mobile/Icons/footerMenuArrow.svg" alt="" class="footer__menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="footer__menu__item">
+                            <div class="footer__menu__item__wrapper">
+                                <p class="footer__menu__item__text">О компании</p>
+                                <img src="img/Mobile/Icons/footerMenuArrow.svg" alt="" class="footer__menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="footer__menu__item">
+                            <div class="footer__menu__item__wrapper">
+                                <p class="footer__menu__item__text">Контакты</p>
+                                <img src="img/Mobile/Icons/footerMenuArrow.svg" alt="" class="footer__menu__item__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__caption footer__user">Пользовательское соглашаение</p>
+            </div>
+        </div>
+    </footer>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <script src="js/service.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

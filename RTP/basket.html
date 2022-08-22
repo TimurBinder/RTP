@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="content">
+                <div class="wrapper">
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Магазин</a>
+                        <a href="service.html" class="menu__item">Услуги</a>
+                        <a href="#" class="menu__item">Системы RTP</a>
+                        <a href="#" class="menu__item">О компании</a>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </div>
+                </div>
+                <div class="person">
+                    <span class="person__contact person__item">8 800 777 77 68</span>
+                    <span class="person__item" onclick="openLogIn()"><img src="img/Icons/logOut.svg" alt="" class="person-icon">Выход</span>
+                    <span class="person__item "><img src="img/Icons/iconBasket.svg" alt="" class="person-icon"">Корзина <div class="basket-count" id="basket-count">1</div><span class="person-basket__sum"><span id="person-basket__sum">1194</span><span class="rub">₽</span></span></a>
+                    <span class="person__item"><img src="img/Icons/iconSearch.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+
+            <div class="header-mobile">
+                <div class="content">
+                    <div class="header__logo-block">
+                        <div class="header__burger__wrap"><img src="img/Mobile/Icons/iconBurger.svg" alt="" class="header__burger" id="burger"></div>
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                        <span class="person__item"><img src="img/Icons/iconBasket.svg" alt="" class="person-icon header-basket-mobile"><div class="basket-count" id="basket-count-mobile">1</div></span></span>
+                    </div>
+                    <div class="header__burger-block">
+                        
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__log-in" id="mobile-item-log-in">
+                                <div class="burger-menu__item burger-menu__item__log-in">
+                                    <img src="img/Icons/logOut.svg" alt="" class="burger-menu__item__log-in__icon">
+                                    <p>Выход</p>
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap">
+                                <div class="burger-menu__item" id="mobile-item-shop"><p>Магазин </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+    
+                                <div class="burger-menu__subitem__wrap" id="burger-menu__subitem__wrap-shop">
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconAlpha.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Alpha</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы и фитинги из полипропилена
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconDelta.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Delta</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы PE-X/EVOH и аксиальные фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconSigma.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Sigma</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Латунные краны и фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconOmega.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Omega</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы для тёплого пола
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconBeta.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Beta</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Канализационые трубы и фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+        
+                                    <div class="burger-menu__subitem">
+                                        <img src="img/Mobile/Icons/iconGamma.svg" alt="" class="burger-menu__subitem__icon">
+                                        <figure class="burger-menu__subitem__text">
+                                            Система <span class="bold">Gamma</span>
+                                            <figcaption class="burger-menu__subitem__caption">
+                                                Трубы ПНД и компрессионные фитинги
+                                            </figcaption>
+                                        </figure>
+                                    </div> 
+        
+                                    <div class="burger-menu__subitem">
+                                        <div class="burger-menu__subitem__text burger-menu__subitem__text__tools">Инструменты <span class="bold">для монтажа</span></div>
+                                    </div> 
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-services">
+                                <div class="burger-menu__item"><p>Услуги </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-RTP">
+                                <div class="burger-menu__item"><p>Системы RTP </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-company">
+                                <div class="burger-menu__item"><p>О компании </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap" id="mobile-item-contacts">
+                                <div class="burger-menu__item"><p>Контакты </p>
+                                    <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__hotline">
+                                <div class="burger-menu__item burger-menu__item__hotline-block">
+                                    <figure class="burger-menu__item__hotline">
+                                        <figcaption class="burger-menu__item__hotline-caption">Горячая линия</figcaption>
+                                        8 800 777 77 68
+                                    </figure>
+                                </div>
+                            </div>
+    
+                            <div class="burger-menu__item-wrap burger-menu__item-wrap__search" id="mobile-item-search">
+                                <div class="burger-menu__item">
+                                    <input type="text" placeholder="Поиск по сайту" class="burger-menu__item__search">
+                                    <img src="img/Icons/iconSearch.svg" alt="" class="burger-menu__item__img__search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Контент -->
+    <!-- Заголовок страницы -->
+    <section class="body-head">
+        <div class="content">
+            <div class="banner__anchor-block">
+                <a href="index.html" class="banner__anchor">Главная</a>
+                <div class="banner__anchor-now"><span class="bold">•</span> <span id="personal-office"> Корзина </span> <span id="shopping"> Мои покупки </span> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <section class="profile-basket">
+        <div class="content">
+            <div class="profile-basket__table">
+                <div class="profile__basket__table__head profile__basket__table__row">
+                    <div class="profile__basket__table__head__item profile__basket__table__head__item__position">
+                        Позиция
+                    </div>
+
+                    <div class="profile__basket__table__head__item profile__basket__table__head__item__price">
+                        Цена
+                    </div>
+
+                    <div class="profile__basket__table__head__item profile__basket__table__head__item__count">
+                        Количество
+                    </div>
+
+                    <div class="profile__basket__table__head__item profile__basket__table__head__item__total">
+                        Итого
+                    </div>
+
+                    <div class="profile__basket__table__head__item profile__basket__table__head__item__delete">
+                        Удалить
+                    </div>
+                </div>
+                <!-- Строка -->
+                <div class="profile__basket__table__row">
+                    <div class="profile__basket__table__row-number">
+                        
+                    </div>
+
+                    <div class="profile__basket__table__row__img-block">
+                        <img src="img/Service/ppr2.png" alt="" class="profile__basket__table__row__img">
+                    </div>
+
+                    <div class="profile__basket__table__row__name-block">
+                        <span class="profile__basket__table__row__name">Кран шаровой</span>
+                        <span class="profile__basket__table__row__name-caption">Для радиатора прямой</span>
+                        <span class="profile__basket__table__row__article">Код товара: <span class="profile__basket__table__row__article-code">359593</span></span>
+                    </div>
+
+                    <div class="profile__basket__table__row__price-block">
+                        <div class="profile__basket__table__row__price__wrap">
+                            <span class="profile__basket__table__row__old-price-unit"><span class="profile__basket__table__row__old-price">219</span> ₽</span>
+                            <span class="profile__basket__table__row__price-unit"><span class="profile__basket__table__row__price">199.29</span> ₽</span>
+                        </div>
+                        <span class="profile__basket__table__row__price-discount">-9%</span>
+                    </div>
+
+                    <div class="profile__basket__table__row__count-block">
+                        <div class="profile__basket__table__row__count-change__wrap">
+                            <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change buy-count__remove">
+                            <div class="profile__basket__table__row__count buy-count">2</div>
+                            <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change buy-count__add">
+                        </div>
+                        <div class="profile__basket__table__row__count-caption profile__basket__table__row__price-discount"><span class="buy-count-caption">2</span> штуки</div>
+                    </div>
+
+                    <div class="profile__basket__table__row__total">
+                        398 ₽
+                    </div>
+
+                    <div class="profile__basket__table__row__delete">
+                        <img src="img/Service/Icons/basketDelete.svg" alt="" class="profile__basket__table__row__delete-icon">
+                    </div>
+                </div>
+                <!-- Конец строки -->
+                <!-- Строка -->
+                <div class="profile__basket__table__row">
+                    <div class="profile__basket__table__row-number">
+                        
+                    </div>
+
+                    <div class="profile__basket__table__row__img-block">
+                        <img src="img/Service/ppr1.png" alt="" class="profile__basket__table__row__img">
+                    </div>
+
+                    <div class="profile__basket__table__row__name-block">
+                        <span class="profile__basket__table__row__name">Кран шаровой</span>
+                        <span class="profile__basket__table__row__name-caption">Для радиатора прямой</span>
+                        <span class="profile__basket__table__row__article">Код товара: <span class="profile__basket__table__row__article-code">359593</span></span>
+                    </div>
+
+                    <div class="profile__basket__table__row__price-block">
+                        <div class="profile__basket__table__row__price__wrap">
+                            <span class="profile__basket__table__row__old-price-unit"><span class="profile__basket__table__row__old-price">219</span> ₽</span>
+                            <span class="profile__basket__table__row__price-unit"><span class="profile__basket__table__row__price">199.29</span> ₽</span>
+                        </div>
+                        <span class="profile__basket__table__row__price-discount">-9%</span>
+                    </div>
+
+                    <div class="profile__basket__table__row__count-block">
+                        <div class="profile__basket__table__row__count-change__wrap">
+                            <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change buy-count__remove">
+                            <div class="profile__basket__table__row__count buy-count">2</div>
+                            <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change buy-count__add">
+                        </div>
+                        <div class="profile__basket__table__row__count-caption profile__basket__table__row__price-discount"><span class="buy-count-caption">2</span> штуки</div>
+                    </div>
+
+                    <div class="profile__basket__table__row__total">
+                        398 ₽
+                    </div>
+
+                    <div class="profile__basket__table__row__delete">
+                        <img src="img/Service/Icons/basketDelete.svg" alt="" class="profile__basket__table__row__delete-icon">
+                    </div>
+                </div>
+                <!-- Конец строки -->
+                <!-- Строка -->
+                <div class="profile__basket__table__row">
+                    <div class="profile__basket__table__row-number">
+                        
+                    </div>
+
+                    <div class="profile__basket__table__row__img-block">
+                        <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img">
+                    </div>
+
+                    <div class="profile__basket__table__row__name-block">
+                        <span class="profile__basket__table__row__name">Кран шаровой</span>
+                        <span class="profile__basket__table__row__name-caption">Для радиатора прямой</span>
+                        <span class="profile__basket__table__row__article">Код товара: <span class="profile__basket__table__row__article-code">359593</span></span>
+                    </div>
+
+                    <div class="profile__basket__table__row__price-block">
+                        <div class="profile__basket__table__row__price__wrap">
+                            <span class="profile__basket__table__row__old-price-unit"><span class="profile__basket__table__row__old-price">219</span> ₽</span>
+                            <span class="profile__basket__table__row__price-unit"><span class="profile__basket__table__row__price">199.29</span> ₽</span>
+                        </div>
+                        <span class="profile__basket__table__row__price-discount">-9%</span>
+                    </div>
+
+                    <div class="profile__basket__table__row__count-block">
+                        <div class="profile__basket__table__row__count-change__wrap">
+                            <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change buy-count__remove">
+                            <div class="profile__basket__table__row__count buy-count">2</div>
+                            <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change buy-count__add">
+                        </div>
+                        <div class="profile__basket__table__row__count-caption profile__basket__table__row__price-discount"><span class="buy-count-caption">2</span> штуки</div>
+                    </div>
+
+                    <div class="profile__basket__table__row__total">
+                        398 ₽
+                    </div>
+
+                    <div class="profile__basket__table__row__delete">
+                        <img src="img/Service/Icons/basketDelete.svg" alt="" class="profile__basket__table__row__delete-icon">
+                    </div>
+                </div>
+                <!-- Конец строки --> 
+                 <!-- Строка -->
+                <div class="profile__basket__table__row">
+                    <div class="profile__basket__table__row-number">
+                        
+                    </div>
+
+                    <div class="profile__basket__table__row__img-block">
+                        <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img">
+                    </div>
+
+                    <div class="profile__basket__table__row__name-block">
+                        <span class="profile__basket__table__row__name">Кран шаровой</span>
+                        <span class="profile__basket__table__row__name-caption">Для радиатора прямой</span>
+                        <span class="profile__basket__table__row__article">Код товара: <span class="profile__basket__table__row__article-code">359593</span></span>
+                    </div>
+
+                    <div class="profile__basket__table__row__price-block">
+                        <div class="profile__basket__table__row__price__wrap">
+                            <span class="profile__basket__table__row__old-price-unit"><span class="profile__basket__table__row__old-price">219</span> ₽</span>
+                            <span class="profile__basket__table__row__price-unit"><span class="profile__basket__table__row__price">199.29</span> ₽</span>
+                        </div>
+                        <span class="profile__basket__table__row__price-discount">-9%</span>
+                    </div>
+
+                    <div class="profile__basket__table__row__count-block">
+                        <div class="profile__basket__table__row__count-change__wrap">
+                            <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change buy-count__remove">
+                            <div class="profile__basket__table__row__count buy-count">2</div>
+                            <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change buy-count__add">
+                        </div>
+                        <div class="profile__basket__table__row__count-caption profile__basket__table__row__price-discount"><span class="buy-count-caption">2</span> штуки</div>
+                    </div>
+
+                    <div class="profile__basket__table__row__total">
+                        398 ₽
+                    </div>
+
+                    <div class="profile__basket__table__row__delete">
+                        <img src="img/Service/Icons/basketDelete.svg" alt="" class="profile__basket__table__row__delete-icon">
+                    </div>
+                </div>
+                <!-- Конец строки --> 
+                <!-- Строка -->
+                <div class="profile__basket__table__row">
+                    <div class="profile__basket__table__row-number">
+                        
+                    </div>
+
+                    <div class="profile__basket__table__row__img-block">
+                        <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img">
+                    </div>
+
+                    <div class="profile__basket__table__row__name-block">
+                        <span class="profile__basket__table__row__name">Кран шаровой</span>
+                        <span class="profile__basket__table__row__name-caption">Для радиатора прямой</span>
+                        <span class="profile__basket__table__row__article">Код товара: <span class="profile__basket__table__row__article-code">359593</span></span>
+                    </div>
+
+                    <div class="profile__basket__table__row__price-block">
+                        <div class="profile__basket__table__row__price__wrap">
+                            <span class="profile__basket__table__row__old-price-unit"><span class="profile__basket__table__row__old-price">219</span> ₽</span>
+                            <span class="profile__basket__table__row__price-unit"><span class="profile__basket__table__row__price">199.29</span> ₽</span>
+                        </div>
+                        <span class="profile__basket__table__row__price-discount">-9%</span>
+                    </div>
+
+                    <div class="profile__basket__table__row__count-block">
+                        <div class="profile__basket__table__row__count-change__wrap">
+                            <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change buy-count__remove">
+                            <div class="profile__basket__table__row__count buy-count">2</div>
+                            <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change buy-count__add">
+                        </div>
+                        <div class="profile__basket__table__row__count-caption profile__basket__table__row__price-discount"><span class="buy-count-caption">2</span> штуки</div>
+                    </div>
+
+                    <div class="profile__basket__table__row__total">
+                        398 ₽
+                    </div>
+
+                    <div class="profile__basket__table__row__delete">
+                        <img src="img/Service/Icons/basketDelete.svg" alt="" class="profile__basket__table__row__delete-icon">
+                    </div>
+                </div>
+                <!-- Конец строки --> 
+
+                <div class="profile__basket__table__bottom">
+                    <div class="profile__basket__table__weight__wrap">
+                        <div class="profile__basket__table__weight-block">
+                            Вес и объем товаров в заказе: <span class="profile__basket__table__weight"> 55.89 </span>кг, <span class="profile__basket__table__volume"> 0.40 м3 </span>
+                        </div>
+                        <div class="profile__basket__table__weight-block">
+                            Загрузка машины: <span class="profile__basket__table__car-percent"> 1% </span>, <span class="profile__basket__table__car-weight"> 3 т </span>. тент <span class="profile__basket__table__car-volume"> 12 м3 </span>
+                        </div>
+                    </div>
+    
+                    <div class="profile__basket__table__total">
+                        <div class="profile__basket__table__total__sum-block">
+                            Товаров на сумму <span class="profile__basket__table__border"></span><span class="profile__basket__table__total__sum" id="basket__total__price">1194</span> ₽
+                        </div>
+                        <div class="profile__basket__table__total__sum-block">
+                            Общая скидка <span class="profile__basket__table__border"></span><span class="basket__total__discount">-<span class="profile__basket__table__total__sum basket__total__discount" id="basket__total__discount">120</span> ₽</span>
+                        </div>
+                    </div>
+                    <div class="profile__basket__table__total__sum-block profile__basket__table__total__sum-block-sum">
+                        Итого, включая налог <span class="profile__basket__table__border"></span><span class="profile__basket__table__total__sum" id="basket__total__sum">1194</span> ₽
+                    </div>
+                    <a href="#" class="store__main__btn profile__basket__btn">Продолжить</a>
+                </div>
+            </div>
+
+            <!-- Мобильная версия -->
+            <div class="profile-basket-mobile">
+                <div class="profile-basket__title-mobile">Корзина</div>
+                
+                <!-- Строка -->
+                <div class="profile__basket__table__row__wrapper-mobile">
+                    <div class="profile__basket__table__row-mobile">
+                        <div class="profile__basket__table__row__section-mobile">
+                            <div class="profile__basket__table__row-number-mobile">
+                                1   
+                            </div>
+        
+                            <div class="profile__basket__table__row__img-block-mobile">
+                                <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img-mobile">
+                            </div>
+                        </div>
+    
+                        <div class="profile-basket__table__row__right-mobile">
+                            <div class="profile__basket__table__row__name-block-mobile">
+                                <span class="profile__basket__table__row__name-mobile">Кран шаровой</span>
+                                <span class="profile__basket__table__row__name-caption-mobile">Для радиатора прямой <span class="profile__basket__table__row__name-option-mobile">⌀ 20х1/2"</span></span>
+                            </div>
+    
+                            <hr class="profile__basket__line-mobile">
+        
+                            <div class="profile__basket__table__row__price-block-mobile">
+                                <div class="profile__basket__table__row__price__wrap-mobile">
+                                    <span class="profile__basket__table__row__price-unit-mobile"><span class="profile__basket__table__row__price-mobile">199.29</span> ₽</span>
+                                    <span class="profile__basket__table__row__article-mobile">артикул: <span class="profile__basket__table__row__article-code">359593</span></span>
+                                </div>
+                            </div>
+        
+                            <div class="profile__basket__table__row__section-mobile">
+                                <div class="profile__basket__table__row__count-block-mobile">
+                                    <div class="profile__basket__table__row__count-change__wrap-mobile">
+                                        <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__remove-mobile">
+                                        <div class="profile__basket__table__row__count-mobile buy-count-mobile">2</div>
+                                        <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__add-mobile">
+                                    </div>
+                                </div>
+            
+                                <div class="profile__basket__table__row__total-block-mobile">
+                                   Итого: <span class="profile__basket__table__row__total-mobile">398 </span> ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец строки --> 
+                
+                <!-- Строка -->
+                <div class="profile__basket__table__row__wrapper-mobile">
+                    <div class="profile__basket__table__row-mobile">
+                        <div class="profile__basket__table__row__section-mobile">
+                            <div class="profile__basket__table__row-number-mobile">
+                                1   
+                            </div>
+        
+                            <div class="profile__basket__table__row__img-block-mobile">
+                                <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img-mobile">
+                            </div>
+                        </div>
+    
+                        <div class="profile-basket__table__row__right-mobile">
+                            <div class="profile__basket__table__row__name-block-mobile">
+                                <span class="profile__basket__table__row__name-mobile">Кран шаровой</span>
+                                <span class="profile__basket__table__row__name-caption-mobile">Для радиатора прямой <span class="profile__basket__table__row__name-option-mobile">⌀ 20х1/2"</span></span>
+                            </div>
+    
+                            <hr class="profile__basket__line-mobile">
+        
+                            <div class="profile__basket__table__row__price-block-mobile">
+                                <div class="profile__basket__table__row__price__wrap-mobile">
+                                    <span class="profile__basket__table__row__price-unit-mobile"><span class="profile__basket__table__row__price-mobile">199.29</span> ₽</span>
+                                    <span class="profile__basket__table__row__article-mobile">артикул: <span class="profile__basket__table__row__article-code">359593</span></span>
+                                </div>
+                            </div>
+        
+                            <div class="profile__basket__table__row__section-mobile">
+                                <div class="profile__basket__table__row__count-block-mobile">
+                                    <div class="profile__basket__table__row__count-change__wrap-mobile">
+                                        <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__remove-mobile">
+                                        <div class="profile__basket__table__row__count-mobile buy-count-mobile">2</div>
+                                        <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__add-mobile">
+                                    </div>
+                                </div>
+            
+                                <div class="profile__basket__table__row__total-block-mobile">
+                                   Итого: <span class="profile__basket__table__row__total-mobile">398 </span> ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец строки --> 
+
+                <!-- Строка -->
+                <div class="profile__basket__table__row__wrapper-mobile">
+                    <div class="profile__basket__table__row-mobile">
+                        <div class="profile__basket__table__row__section-mobile">
+                            <div class="profile__basket__table__row-number-mobile">
+                                1   
+                            </div>
+        
+                            <div class="profile__basket__table__row__img-block-mobile">
+                                <img src="img/Service/ppr3.png" alt="" class="profile__basket__table__row__img-mobile">
+                            </div>
+                        </div>
+    
+                        <div class="profile-basket__table__row__right-mobile">
+                            <div class="profile__basket__table__row__name-block-mobile">
+                                <span class="profile__basket__table__row__name-mobile">Кран шаровой</span>
+                                <span class="profile__basket__table__row__name-caption-mobile">Для радиатора прямой <span class="profile__basket__table__row__name-option-mobile">⌀ 20х1/2"</span></span>
+                            </div>
+    
+                            <hr class="profile__basket__line-mobile">
+        
+                            <div class="profile__basket__table__row__price-block-mobile">
+                                <div class="profile__basket__table__row__price__wrap-mobile">
+                                    <span class="profile__basket__table__row__price-unit-mobile"><span class="profile__basket__table__row__price-mobile">199.29</span> ₽</span>
+                                    <span class="profile__basket__table__row__article-mobile">артикул: <span class="profile__basket__table__row__article-code">359593</span></span>
+                                </div>
+                            </div>
+        
+                            <div class="profile__basket__table__row__section-mobile">
+                                <div class="profile__basket__table__row__count-block-mobile">
+                                    <div class="profile__basket__table__row__count-change__wrap-mobile">
+                                        <img src="img/Service/Icons/countRemove.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__remove-mobile">
+                                        <div class="profile__basket__table__row__count-mobile buy-count-mobile">2</div>
+                                        <img src="img/Service/Icons/countAdd.svg" alt="" class="profile__basket__table__row__count-change-mobile buy-count__add-mobile">
+                                    </div>
+                                </div>
+            
+                                <div class="profile__basket__table__row__total-block-mobile">
+                                   Итого: <span class="profile__basket__table__row__total-mobile">398 </span> ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец строки -->
+                
+                <div class="basket-table__bottom-mobile">
+                    <div class="profile__basket__table__weight__wrap">
+                        <div class="profile__basket__table__weight-block">
+                            Вес и объем товаров в заказе: <span class="profile__basket__table__weight"> 55.89 </span>кг, <span class="profile__basket__table__volume"> 0.40 м3 </span>
+                        </div>
+                        <div class="profile__basket__table__weight-block">
+                            Загрузка машины: <span class="profile__basket__table__car-percent"> 1% </span>, <span class="profile__basket__table__car-weight"> 3 т </span>. тент <span class="profile__basket__table__car-volume"> 12 м3 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile__basket__table__total-mobile">
+                    <div class="profile__basket__table__total__sum-block">
+                        Товаров на сумму <span class="profile__basket__table__border"></span><span class="profile__basket__table__total__sum" id="basket__total__price-mobile">1194</span> ₽
+                    </div>
+                    <div class="profile__basket__table__total__sum-block">
+                        Общая скидка <span class="profile__basket__table__border"></span><span class="basket__total__discount">-<span class="profile__basket__table__total__sum" id="basket__total__discount-mobile">120</span> ₽</span>
+                    </div>
+                </div>
+                <div class="profile__basket__table__total__sum-block profile__basket__table__total__sum-block-sum">
+                    Итого, включая налог <span class="profile__basket__table__border"></span><span class="profile__basket__table__total__sum" id="basket__total__sum-mobile">1194</span> ₽
+                </div>
+                <a href="#" class="store__main__btn profile__basket__btn">Продолжить</a>
+                <a href="#" class="profile__basket__table__anchor-mobile"><img src="img/Mobile/Icons/arrowLeft.svg" alt="" class="profile__basket__table__anchor__img-mobile">В каталог</a>
+            </div>
+        </div>
+        <img src="img/logoWatermark.svg" alt="" class="profile-edit__watermark-logo profile-basket__watermark-logo">
+    </section>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="footer__wrap">
+                <div class="footer__title">
+                    <figure class="footer__logo-block">
+                        <img src="img/Logo/logoFooter.svg" alt="" class="footer__logo">
+                        <figcaption class="footer__caption">Пользовательское соглашение</figcaption>
+                    </figure>
+                    <figure class="footer__hotline">
+                        8 800 777 77 68
+                        <figcaption class="footer__caption">горячая линия</figcaption>
+                    </figure>
+
+                    <figure class="footer__social">
+                        Присоединяйся к нам в соц. сети
+                        <figcaption class="footer__social__icons">
+                            <a href="#"><img src="img/Icons/iconFacebook.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconTwitter.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconInstagramm.svg" alt="" class="footer__social__icon"></a>
+                            <a href="#"><img src="img/Icons/iconYoutube.svg" alt="" class="footer__social__icon"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">О компании</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">О нас</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Команда</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Вакансии</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 495 540 52 62
+                                <figcaption class="footer__caption">офис в Москве</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Профессионалам</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Партнерам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Монтажникам</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Проектировщикам</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 925 740 52 62
+                                <figcaption class="footer__caption">офис в Краснодаре</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h5 class="footer__info__title">Системы РТП</h5>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы водоснабжения</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы канализации</a></div>
+                    <div class="footer__info__item"><a href="#" class="footer__info__link">Системы отопления</a></div>
+                    <div class="footer__info__contact">
+                            <figure class="footer__info__phone">
+                                <img src="img/Icons/iconPhone.svg" alt="" class="footer__info__icon"> 
+                                +7 383 383 04 414
+                                <figcaption class="footer__caption">офис в Новосибирске</figcaption>
+                            </figure>
+                            <figure class="footer__info__mail">
+                                <img src="img/Icons/iconMail.svg" alt="" class="footer__info__icon">
+                                <e-mail>info@rosturplast.ru</e-mail>
+                                <figcaption class="footer__caption">e-mail</figcaption>
+                            </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

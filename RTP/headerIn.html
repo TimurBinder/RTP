@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="content">
+                <div class="wrapper">
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Магазин</a>
+                        <a href="service.html" class="menu__item">Услуги</a>
+                        <a href="#" class="menu__item">Системы RTP</a>
+                        <a href="#" class="menu__item">О компании</a>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </div>
+                </div>
+                <div class="person">
+                    <span class="person__contact person__item">8 800 777 77 68</span>
+                    <span class="person__item" onclick="openLogIn()"><img src="img/Icons/logOut.svg" alt="" class="person-icon">Выход</span>
+                    <span class="person__item "><img src="img/Icons/iconBasket.svg" alt="" class="person-icon"">Корзина <div class="basket-count">1</div><span class="person-basket__sum">1 194 <span class="rub">₽</span></span></span>
+                    <span class="person__item"><img src="img/Icons/iconSearch.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="content">
+                <div class="header__logo-block">
+                    <div class="header__burger__wrap"><img src="img/Mobile/Icons/iconBurger.svg" alt="" class="header__burger" id="burger"></div>
+                    <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <span class="person__item"><img src="img/Icons/iconBasket.svg" alt="" class="person-icon header-basket-mobile"><div class="basket-count-mobile">1</div></span></span>
+                </div>
+                <div class="header__burger-block">
+                    
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__log-in" id="mobile-item-log-out">
+                            <div class="burger-menu__item burger-menu__item__log-in">
+                                <img src="img/Icons/logOut.svg" alt="" class="burger-menu__item__log-in__icon">
+                                <p>Выход</p>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap">
+                            <div class="burger-menu__item" id="mobile-item-shop"><p>Магазин </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+
+                            <div class="burger-menu__subitem__wrap" id="burger-menu__subitem__wrap-shop">
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconAlpha.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Alpha</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы и фитинги из полипропилена
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconDelta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Delta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы PE-X/EVOH и аксиальные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconSigma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Sigma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Латунные краны и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconOmega.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Omega</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы для тёплого пола
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconBeta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Beta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Канализационые трубы и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconGamma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Gamma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы ПНД и компрессионные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div> 
+    
+                                <div class="burger-menu__subitem">
+                                    <div class="burger-menu__subitem__text burger-menu__subitem__text__tools">Инструменты <span class="bold">для монтажа</span></div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-services">
+                            <div class="burger-menu__item"><p>Услуги </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-RTP">
+                            <div class="burger-menu__item"><p>Системы RTP </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-company">
+                            <div class="burger-menu__item"><p>О компании </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-contacts">
+                            <div class="burger-menu__item"><p>Контакты </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__hotline">
+                            <div class="burger-menu__item burger-menu__item__hotline-block">
+                                <figure class="burger-menu__item__hotline">
+                                    <figcaption class="burger-menu__item__hotline-caption">Горячая линия</figcaption>
+                                    8 800 777 77 68
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__search" id="mobile-item-search">
+                            <div class="burger-menu__item">
+                                <input type="text" placeholder="Поиск по сайту" class="burger-menu__item__search">
+                                <img src="img/Icons/iconSearch.svg" alt="" class="burger-menu__item__img__search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/header.js"></script>
+</body>
+</html>

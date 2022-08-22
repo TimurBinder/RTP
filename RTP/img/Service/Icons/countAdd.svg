@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.0689mm" height="3.0689mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 20.63 20.63"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="731" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="500">
+	<font-face 
+		font-family="Montserrat Medium">
+		<font-face-src>
+			<font-face-name name="Montserrat Medium"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode=" " horiz-adv-x="268" d=""/>
+   <glyph unicode="+" horiz-adv-x="582" d="M248.994 131l0 437.999 84.0187 0 0 -437.999 -84.0187 0zm-182.006 179.003l0 79.0026 448.002 0 0 -79.0026 -448.002 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Montserrat Medium";font-variant:normal;font-style:normal;font-weight:500;src:url("#FontID0") format(svg)}
+    .fil0 {fill:#D9DADA}
+    .fil1 {fill:#434242}
+    .fnt0 {font-weight:500;font-size:23.05px;font-family:'Montserrat Medium'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="-0" y="-0" width="20.63" height="20.63" rx="3.21" ry="3.21"/>
+  <text x="3.61" y="18.39"  class="fil1 fnt0">+      </text>
+ </g>
+</svg>

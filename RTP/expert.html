@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Профиль специалиста</title>
+</head>
+<body>
+    <section class="body-head body-head-expert">
+        <div class="content">
+            <div class="banner__anchor-block">
+                <a href="index.html" class="banner__anchor">Главная <img src="img/Service/Icons/headArrowRight.svg" alt="" class="banner__anchor__img"></a>
+                <a href="index.html" class="banner__anchor">Каталог монтажников <img src="img/Service/Icons/headArrowRight.svg" alt="" class="banner__anchor__img"></a>
+                <div class="banner__anchor-now"><span class="bold">•</span> Профиль специалиста </div>
+            </div>
+            <div class="body-title__block">
+                <h2 class="body-title"><span class="uppercase">Профиль <span class="semi-bold">специалиста</span></span></h2>
+                <a href="service.html" class="anchor__past-page"><img src="img/Service/Icons/headArrowLeft.svg" alt="" class="anchor__past-page__img"> Назад к поиску</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal-img"> 
+        <div class="modal-img__close-block">
+            <img src="img/Service/Icons/modalPlay.svg" alt="" class="modal-img__close-block__img modal-img__close-block__play">
+            <img src="img/Service/Icons/modalMenu.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-menu">
+            <img src="img/Service/Icons/modalClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeModalImg()">
+        </div>
+        <img src="img/Service/Icons/modalArrowLeft.svg" alt="" class="installer__work__img__arrow installer__work__img__arrow-left modal-img__arrow modal-img__arrow-left" onclick="changeModal(-1)">
+        <figure class="modal-img__main">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__main-img">
+            <figcaption class="modal-img__main-caption">
+                Коллекторная разводка по дому</figcaption>
+        </figure>
+        <img src="img/Service/Icons/modalArrowRight.svg" alt="" class="installer__work__img__arrow installer__work__img__arrow-right modal-img__arrow modal-img__arrow-right" onclick="changeModal(1)">
+        <div class="modal-img__list">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(0)">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(1)">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(2)">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(3)">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(4)">
+            <img src="img/Service/installerWork1.png" alt="" class="modal-img__list-img" onclick="changeModalImgInd(5)">
+        </div>
+    </div>
+    <!-- -------------------------- -->
+
+    <section class="expert">
+        <div class="content">
+            <div id="expert__block-shadow"></div>
+            <a href="#"><img src="img/Mobile/Icons/arrowLeft.svg" alt="" class="back"></a>
+            <div class="expert__block">
+                <div class="services__title-mobile">Профиль <span class="medium">специалиста</span></div>
+                <div class="installers__card"> <!-- Карточка сотрудников-->
+                    <img src="img/Service/Installers/installer.png" alt="" class="installers__card__img">
+                    <div class="installer__profile">
+                        <div class="installers__card__offer">
+                            <!-- Имя, Город -->
+                            <figure class="installers__card__offer__title">
+                                <span class="installer-name">Тимофеев Сергей</span><br>
+                                <figcaption class="installers__card__offer__title-caption">
+                                    г.Санкт-Петербург
+                                </figcaption>
+                            </figure>
+
+                            <!-- Оффер-Средняя оценка -->
+                            <div class="installers__card__offer__reputation">
+                                <div class="installers__card__offer__reputation__rating">
+                                    <img src="img/Service/Icons/star.svg" alt="" class="installers__card__offer__reputation__rating__img">
+                                    <span class="installers__card__offer__reputation___num">4,9</span>
+                                </div>
+                                <!-- Оффер-Количество отзывов -->
+                                <div class="installers__card__offer__reputation__reviews">
+                                    <img src="img/Service/Icons/reviews.svg" alt="" class="installers__card__offer__reputation__reviews__img">
+                                    <span class="installers__card__offer__reputation___num">30 отзывов</span>
+                                </div>
+                            </div>
+
+                            <!-- Оффер-Социальные сети -->
+                            <div class="installers__card__offer__social">
+                                Социальные сети: 
+                                <a href="#"><img src="img/Service/Social/youtube.png" alt="" class="installers__card__offer__social__img"></a>
+                                <a href="#"><img src="img/Service/Social/vk.png" alt="" class="installers__card__offer__social__img"></a>
+                                <a href="#"><img src="img/Service/Social/inst.png" alt="" class="installers__card__offer__social__img"></a>  
+                            </div>
+
+                            <!-- Оффер-Стаж -->
+                            <div class="installers__card__offer__seniority">
+                                Стаж: <span class="installers__card__offer__seniority__num">12 лет</span>
+                            </div>
+                            
+                            <!-- Оффер-Специальность -->
+                            <div class="installers__card__offer__specialty">
+                                Специализация: <span class="installers__card__offer__specialty__list"> радиаторное отопление, теплые полы, бурение скважин,
+                                    монтаж колодцев, установка газгольдеров, разводка электрики</span>
+                            </div>
+
+                            <!-- Кнопки -->
+                            <div class="installers__card__offer__btn">
+                                <a href="" class="store__main__btn expert__main__btn">Узнать стоимость</a>
+                                <a href="" class="expert__secondary__btn store__secondary__btn store__secondary__btn-first">В избранное</a>
+                                <a href="" class="expert__secondary__btn store__secondary__btn store__secondary__btn__option">Добавить отзыв</a>
+                            </div>
+
+                            <!-- О себе -->
+                            <div class="installer__himself installer__section">
+                                <p class="installer__section-title">О себе</p>
+                                <p class="installer__section-intro installer__himself__text">Имею большой практичный опыт в решении проблем с электрикой, сантехникой жилых помещениях, квартирах… 
+                                    Проблемы решаю за счет максимально точной диагностики и с минимальным ущербом для ремонта квартиры, дома. Стараюсь выполнить работу самым надежным способом. имею большое колличество отзывов моих клиентов…Большой опыт работы по диагностике и устранению скрытых протечек из квартиры нанижние этажи (водоснабжение, водоотведение, душевые уголки, кабины), восстановлениеэлектроснабжения после протечек воды, после короткого замыкания и восстановлениестарой проводки…, замена автоматов в щитке на этаже, электроснабжение кухонной зоны, подключение… монтаж труб, полипропилен, металлопласт… редуктора, гребенки и прочее…</p>
+                            </div>
+
+                            <!-- Стаж -->
+                            <div class="installer__seniority installer__section">
+                                <p class="installer__section-title">Стаж <img src="img/Service/Icons/tick.svg" alt="" class="installer__section-title__tick"></p>
+                                <p class="installer__section__intro installer__seniority__text">Опыт работы с 2010г.</p>
+                            </div>
+
+                            <!-- Фото -->
+                            <div class="installer__work installer__section">
+                                <p class="installer__section-title">Фото</p>
+                                <img src="img/Service/Icons/expertArrowLeft.svg" alt="" class="installer__work__img__arrow installer__work__img__arrow-left" onclick="changeSlide(-1)">
+                                <!-- Слайдер -->
+                                <div class="installer__work__img-block" id="installer__work__img-block">
+                                    
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img" onclick="openModalImgInd(0)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Коллекторная разводка</span><span class="installer__hidden-caption"> по дому</span>...</figcaption>
+                                    </figure>
+                                    <!-- ----------------------------------------- -->
+
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img"onclick="openModalImgInd(1)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Теплый пол1</span><span class="installer__hidden-caption"> текст</span>...</figcaption>
+                                    </figure>
+                                    <!-- ----------------------------------------- -->
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img"onclick="openModalImgInd(2)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Теплый пол2</span><span class="installer__hidden-caption"> текст1</span>...</figcaption>
+                                    </figure>
+                                    <!-- ----------------------------------------- -->
+
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img" onclick="openModalImgInd(3)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Теплый пол3</span><span class="installer__hidden-caption"> текст2</span>...</figcaption>
+                                    </figure>
+                                    <!-- ----------------------------------------- -->
+
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img" onclick="openModalImgInd(4)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Теплый пол4</span><span class="installer__hidden-caption"> текст3</span>...</figcaption>
+                                    </figure>
+                                    <!-- ----------------------------------------- -->
+
+                                    <figure class="installer__work__img-card">
+                                        <img src="img/Service/installerWork1.png" alt="" class="installer__work__img" onclick="openModalImgInd(5)">
+                                        <figcaption class="installer__work__img-caption">
+                                            <span class="installer__visible-caption">Теплый пол5</span><span class="installer__hidden-caption"> текст4</span>...</figcaption>
+                                    </figure>
+                                    
+                                </div>
+                                <img src="img/Service/Icons/expertArrowRight.svg" alt="" class="installer__work__img__arrow installer__work__img__arrow-right" onclick="changeSlide(1)">
+                                <div class="slider">
+                                    <div class="circle" onclick="changeSliderInd(0)"></div>
+                                    <div class="circle" onclick="changeSliderInd(1)"></div>
+                                    <div class="circle" onclick="changeSliderInd(2)"></div>
+                                    <div class="circle" onclick="changeSliderInd(3)"></div>
+                                    <div class="circle" onclick="changeSliderInd(4)"></div>
+                                </div>
+                                <div class="more-img" onclick="openModalImg()">+ ещё фото <img src="img/Service/Icons/moreImgArrow.svg" alt="" class="more-img__arrow"></div>
+                            </div>
+                            <!-- -------------------------------------------------------------------------- -->
+
+                            <!-- Блок "Отзывы"-Оценки ------------------------------------------------------------------- -->
+                            <div class="installer__reviews installer__section">
+                                <p class="installer__section-title">Отзывы <span class="installer__reviews-count">30</span></p>
+                                <div class="installer__reviews-item">
+                                    <span class="installer__reviews-rate">5</span> <img src="img/Service/Icons/starReview.svg" alt="" class="installer__review-star">
+                                    <div class="installer__reviews-item__line__block">
+                                        <hr class="installer__reviews-item__line installer__reviews-item__line-empty">
+                                    <hr class="installer__reviews-item__line installer__reviews-item__line-full" id="line-rate-5">
+                                    </div>
+                                </div>
+
+                                <div class="installer__reviews-item">
+                                    <span class="installer__reviews-rate">4</span> <img src="img/Service/Icons/starReview.svg" alt="" class="installer__review-star">
+                                    <div class="installer__reviews-item__line__block">
+                                        <hr class="installer__reviews-item__line installer__reviews-item__line-empty">
+                                    <hr class="installer__reviews-item__line installer__reviews-item__line-full" id="line-rate-4">
+                                    </div>
+                                </div>
+
+                                <div class="installer__reviews-item">
+                                    <span class="installer__reviews-rate">3</span> <img src="img/Service/Icons/starReview.svg" alt="" class="installer__review-star">
+                                    <div class="installer__reviews-item__line__block">
+                                        <hr class="installer__reviews-item__line installer__reviews-item__line-empty">
+                                    <hr class="installer__reviews-item__line installer__reviews-item__line-full" id="line-rate-3">
+                                    </div>
+                                </div>
+
+                                <div class="installer__reviews-item">
+                                    <span class="installer__reviews-rate">2</span> <img src="img/Service/Icons/starReview.svg" alt="" class="installer__review-star">
+                                    <div class="installer__reviews-item__line__block">
+                                        <hr class="installer__reviews-item__line installer__reviews-item__line-empty">
+                                    <hr class="installer__reviews-item__line installer__reviews-item__line-full" id="line-rate-2">
+                                    </div>
+                                </div>
+
+                                <div class="installer__reviews-item">
+                                    <span class="installer__reviews-rate">1</span> <img src="img/Service/Icons/starReview.svg" alt="" class="installer__review-star">
+                                    <div class="installer__reviews-item__line__block">
+                                        <hr class="installer__reviews-item__line installer__reviews-item__line-empty">
+                                    <hr class="installer__reviews-item__line installer__reviews-item__line-full" id="line-rate-1">
+                                    </div>
+                                </div>
+
+                                <!-- Блок "Отзывы"-Отзывы -->
+                                <div class="installer__reviews__section">
+                                    <hr class="installer__reviews__line-dividing">
+                                    <!-- Отзыв -->
+                                    <div class="installer__reviews-offer">
+                                        <div class="installer__reviews__offer-caption">
+                                            <div class="installer__reviews__offer-caption__rate">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                            </div>
+                                            <div class="installer__reviews__offer-caption__date">
+                                                <span class="installer__reviews__offer-caption__date-day">23</span>
+                                                <span class="installer__reviews__offer-caption__date-month">ноября</span>
+                                                <span class="installer__reviews__offer-caption__date-year">2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="installer__reviews__offer-block">
+                                            <div class="installer__reviews__offer-block__name">Иван</div>
+                                            <div class="installer__reviews__offer-block__text">Отличный специалист. Пришёл вовремя, работу сделал быстро и чисто. Также дал советы, рекомендации, указал причины протечки и ошибки сделанные мной во время монтажа сифона, всё чётко и доступно. Очень приветливый, вежливый и общительный
+                                                
+                                                Рекомендую!
+                                                Стоимость работ
+                                                4500 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Отзыв -->
+                                    <hr class="installer__reviews__line-dividing">
+                                    <div class="installer__reviews-offer">
+                                        <div class="installer__reviews__offer-caption">
+                                            <div class="installer__reviews__offer-caption__rate">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                                <img src="img/Service/Icons/star.svg" alt="" class="installer__reviews__offer-caption__rate__star">
+                                            </div>
+                                            <div class="installer__reviews__offer-caption__date">
+                                                <span class="installer__reviews__offer-caption__date-day">23</span>
+                                                <span class="installer__reviews__offer-caption__date-month">ноября</span>
+                                                <span class="installer__reviews__offer-caption__date-year">2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="installer__reviews__offer-block">
+                                            <div class="installer__reviews__offer-block__name">Иван</div>
+                                            <div class="installer__reviews__offer-block__text">Отличный специалист. Пришёл вовремя, работу сделал быстро и чисто. Также дал советы, рекомендации, указал причины протечки и ошибки сделанные мной во время монтажа сифона, всё чётко и доступно. Очень приветливый, вежливый и общительный
+                                                
+                                                Рекомендую!
+                                                Стоимость работ
+                                                4500 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="store__secondary__btn expert__more__btn">Посмотреть ещё</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Блок "Остались вопросы" -->
+    <section class="ask">
+        <div class="content">
+            <h1 class="body-title">Остались <span class="semi-bold">вопросы?</span></h1>
+            <div class="wrapper">
+                <div class="ask-block">
+                    <div id="ask-block-shadow"></div>
+                    <div class="ask-block__wrap">
+                        <h4 class="ask-block__title">Просто укажите куда вам позвонить</h4>
+                        <p class="ask-block__text">Менеджер перезвонит вам, чтобы уточнить детали по вашему вопросу</p>
+                        <p class="ask-block__text">Как с вами связаться?</p>
+                        <div class="ask-block__contacts">
+                            <figure class="ask-block__contacts__block">
+                                <div class="ask-block__contacts__block__img-wrap">
+                                    <img src="img/Service/Icons/call.svg" alt="" class="ask-block__contacts__block__img">
+                                </div>
+                                <figcaption class="ask-block__contacts__block__caption">Звонок</figcaption>
+                            </figure>
+        
+                            <figure class="ask-block__contacts__block">
+                                <div class="ask-block__contacts__block__img-wrap">
+                                    <img src="img/Service/Icons/viber.svg" alt="" class="ask-block__contacts__block__img">
+                                </div>
+                                <figcaption class="ask-block__contacts__block__caption">Viber</figcaption>
+                            </figure>
+        
+                            <figure class="ask-block__contacts__block">
+                                <div class="ask-block__contacts__block__img-wrap">
+                                    <img src="img/Service/Icons/whatsapp.svg" alt="" class="ask-block__contacts__block__img">
+                                </div>
+                                <figcaption class="ask-block__contacts__block__caption">Wat's app</figcaption>
+                            </figure>
+        
+                            <figure class="ask-block__contacts__block">
+                                <div class="ask-block__contacts__block__img-wrap">
+                                    <img src="img/Service/Icons/telegram.svg" alt="" class="ask-block__contacts__block__img">
+                                </div>
+                                <figcaption class="ask-block__contacts__block__caption">Telegram</figcaption>
+                            </figure>
+                        </div>
+                        <div class="ask-block__contacts__input-block">
+                            <form action="" class="ask-block__contacts__form">
+                                <input type="text" placeholder="Ваше имя" class="ask-block__contacts__input">
+                                <input type="phone" placeholder="Ваш номер телефона" class="ask-block__contacts__input">
+                                <button href="#" class="ask-block__contacts__button">Отправить</button>
+                            </form>
+                        </div>
+                        <div class="ask-block__contacts__privacy-policy">
+                            <img src="img/Service/Icons/privacyPolicy.svg" alt="" class="ask-block__contacts__privacy-policy__img">
+                            <p class="ask-block__contacts__privacy-policy__text">Нажимая кнопку вы соглашаетесь
+                                с <a href="" class="ask-block__contacts__privacy-policy__link">политикой конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/Service/questionsInstaller.png" alt="" class="ask__installer-img">
+                <img src="img/Service/askText.png" alt="" class="ask__installer-img-text">
+            </div>
+        </div>
+    </section>
+    <script src="js/expert.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="content">
+                <div class="wrapper">
+                        <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Магазин</a>
+                        <a href="service.html" class="menu__item">Услуги</a>
+                        <a href="#" class="menu__item">Системы RTP</a>
+                        <a href="#" class="menu__item">О компании</a>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </div>
+                </div>
+                <div class="person">
+                    <span class="person__contact person__item">8 800 777 77 68</span>
+                    <span class="person__item" onclick="openLogIn()"><img src="img/Icons/iconPerson.svg" alt="" class="person-icon">Вход</span>
+                    <span class="person__item"><img src="img/Icons/iconBasket.svg" alt=""></span>
+                    <span class="person__item"><img src="img/Icons/iconSearch.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="modal__log-in">
+                <div class="log-in">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title">Вход</p>
+                    <form action="#" class="log-in__form">
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                            <span class="log-in__input-caption">E-mail</span>
+                        </div>
+                        <div class="log-in__input-block">
+                            <input type="password" name="password" placeholder="Пароль" class="log-in__input">
+                            <span class="log-in__input-caption">Пароль</span>
+                            <a href="#" class="log-in__link">Забыли пароль?</a>
+                        </div>
+                        <button href="#" class="log-in__button">Войти</button>
+                    </form>
+                    <div class="log-in__sign-in__block">
+                        <hr><span class="log-in__link">...или создать аккаунт</span><hr>
+                    </div>
+                    <div class="log-in__features">
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Отслеживание статуса
+                                заказа в личном кабинете </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Просмотр истории заказов </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Сохранение адресов доставки </p>
+                        </div>
+                    </div>
+                    <a class="store__main__btn sign-in__btn" onclick="openSignIn()">Регистрация</a>
+                </div>
+            
+                <div class="sign-in log-in">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title sign-in__title">Регистрация</p>
+                    <div class="sign__in__radio-form">
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(0)"><input type="radio" class="sign__in__radio" checked>Физическое лицо</p>
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(1)"><input type="radio" class="sign__in__radio">Юридическое лицо</p>
+                        <p class="sign__in__radio-text" onclick="checkedSignIn(2)"><input type="radio" class="sign__in__radio">Монтажник</p>
+                    </div>
+            
+                    <form action="#" class="log-in__form sign-in__form">
+                        <div class="log-in__input-block">
+                            <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                            <span class="log-in__input-caption">E-mail</span>
+                        </div>
+                        <div class="sign-in__password__block">
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" placeholder="Пароль" id="sign-in__password" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">Пароль</span>
+                                <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible" onclick="showPassword()">
+                            </div>
+                            <div class="log-in__input-block">
+                                <input type="password" name="passwordConfirm" placeholder="Подтвердить пароль" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">Подтвердить пароль</span>
+                            </div>
+                        </div>        
+                        <input type="text" name="town" placeholder="Ваш город" class="log-in__input sign-in__input">
+                    </form>
+            
+                    <div class="log-in__features sign-in__features">
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Отслеживание статуса
+                                заказа в личном кабинете </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Просмотр истории заказов </p>
+                        </div>
+            
+                        <div class="log-in__features__item">
+                            <img src="img/Service/Icons/tick.svg" alt="" class="log-in__features__item__img">
+                            <p class="log-in__features__item__text">Сохранение адресов доставки </p>
+                        </div>
+                    </div>
+                    <a class="store__main__btn sign-in__btn" onclick="openSignInThanks()">Зарегистрироваться</a>
+                    <div class="sign-in__confidential">
+                        <img src="img/Icons/iconConfidential.svg" alt="" class="sign-in__confidential__img">
+                        <p class="sign-in__confidential__text">Нажимая кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> </p>
+                    </div>
+                </div>
+                
+                <!-- Благодарность -->
+                <div class="log-in sign-in__thanks">
+                    <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close" onclick="closeLogIn()">
+                    <p class="log-in__title sign-in__thanks__title">Спасибо!</p>
+                    <p class="sign-in__thanks-text">Вы успешно зарегистрировались на сайте.
+                        На ваш e-mail отправлено письмо с данными для входа.
+                    </p>
+                    <a href="#" class="store__secondary__btn sign-in__thanks__btn" onclick="signInEnd()">Ок</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="content">
+                <div class="header__logo-block">
+                    <div class="header__burger__wrap"><img src="img/Mobile/Icons/iconBurger.svg" alt="" class="header__burger" id="burger"></div>
+                    <img src="img/Logo/logoHeader.svg" alt="" class="logo">
+                    <img src="img/Icons/iconBasket.svg" alt="" class="header__basket">
+                </div>
+                <div class="header__burger-block">
+                    
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__log-in" id="mobile-item-log-in">
+                            <div class="burger-menu__item burger-menu__item__log-in">
+                                <img src="img/Mobile/Icons/iconLogIn.svg" alt="" class="burger-menu__item__log-in__icon">
+                                <p>Вход/Регистрация</p>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap">
+                            <div class="burger-menu__item" id="mobile-item-shop"><p>Магазин </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+
+                            <div class="burger-menu__subitem__wrap" id="burger-menu__subitem__wrap-shop">
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconAlpha.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Alpha</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы и фитинги из полипропилена
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconDelta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Delta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы PE-X/EVOH и аксиальные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconSigma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Sigma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Латунные краны и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconOmega.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Omega</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы для тёплого пола
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconBeta.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Beta</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Канализационые трубы и фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div>
+    
+                                <div class="burger-menu__subitem">
+                                    <img src="img/Mobile/Icons/iconGamma.svg" alt="" class="burger-menu__subitem__icon">
+                                    <figure class="burger-menu__subitem__text">
+                                        Система <span class="bold">Gamma</span>
+                                        <figcaption class="burger-menu__subitem__caption">
+                                            Трубы ПНД и компрессионные фитинги
+                                        </figcaption>
+                                    </figure>
+                                </div> 
+    
+                                <div class="burger-menu__subitem">
+                                    <div class="burger-menu__subitem__text burger-menu__subitem__text__tools">Инструменты <span class="bold">для монтажа</span></div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-services">
+                            <div class="burger-menu__item"><p>Услуги </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-RTP">
+                            <div class="burger-menu__item"><p>Системы RTP </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-company">
+                            <div class="burger-menu__item"><p>О компании </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap" id="mobile-item-contacts">
+                            <div class="burger-menu__item"><p>Контакты </p>
+                                <img src="img/Mobile/Icons/burgerArrow.svg" alt="" class="burger-menu__item__img">
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__hotline">
+                            <div class="burger-menu__item burger-menu__item__hotline-block">
+                                <figure class="burger-menu__item__hotline">
+                                    <figcaption class="burger-menu__item__hotline-caption">Горячая линия</figcaption>
+                                    8 800 777 77 68
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__item-wrap burger-menu__item-wrap__search" id="mobile-item-search">
+                            <div class="burger-menu__item">
+                                <input type="text" placeholder="Поиск по сайту" class="burger-menu__item__search">
+                                <img src="img/Icons/iconSearch.svg" alt="" class="burger-menu__item__img__search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile__log-in__wrapper" id="mobile__log-in__wrapper" >
+                    <div class="mobile__log-in__switch">
+                        <p class="mobile__log-in__switch-log switch-log-activate">Вход</p>
+                        <p class="mobile__log-in__switch-log">Регистрация</p>
+                    </div>
+                    
+                    <div class="mobile__log-in" id="mobile__log-in">
+                        <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close mobile_modal-img__close-block__img-close">
+                        <p class="log-in__title">Вход</p>
+                        <form action="#" class="log-in__form">
+                            <div class="log-in__input-block">
+                                <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">E-mail</span>
+                            </div>
+                            <div class="log-in__input-block">
+                                <input type="password" name="password" placeholder="Пароль" class="log-in__input">
+                                <span class="log-in__input-caption">Пароль</span>
+                                <a href="#" class="log-in__link">Забыли пароль?</a>
+                            </div>
+                            <button href="#" class="log-in__button">Войти</button>
+                        </form>
+                    </div>
+                
+                    <div class="mobile__log-in mobile__sign-in" id="mobile__sign-in">
+                        <img src="img/Service/Icons/loginClose.svg" alt="" class="modal-img__close-block__img modal-img__close-block__img-close mobile_modal-img__close-block__img-close">
+                        <p class="log-in__title sign-in__title">Регистрация</p>
+                        <div class="sign__in__radio-form">
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(3)"><input type="radio" class="sign__in__radio" checked>Физическое лицо</p>
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(4)"><input type="radio" class="sign__in__radio">Юридическое лицо</p>
+                            <p class="sign__in__radio-text" onclick="checkedSignIn(5)"><input type="radio" class="sign__in__radio">Монтажник</p>
+                        </div>
+                
+                        <form action="#" class="log-in__form sign-in__form">
+                            <div class="log-in__input-block">
+                                <input type="email" name="email" placeholder="E-mail" class="log-in__input sign-in__input">
+                                <span class="log-in__input-caption">E-mail</span>
+                            </div>
+                            <div class="sign-in__password__block">
+                                <div class="log-in__input-block">
+                                    <input type="password" name="password" placeholder="Пароль" id="sign-in__password" class="log-in__input sign-in__input">
+                                    <span class="log-in__input-caption">Пароль</span>
+                                    <img src="img/Service/Icons/passwordVisible.svg" alt="" class="sign-in__password-visible" onclick="showPassword()">
+                                </div>
+                                <div class="log-in__input-block">
+                                    <input type="password" name="passwordConfirm" placeholder="Подтвердить пароль" class="log-in__input sign-in__input">
+                                    <span class="log-in__input-caption">Подтвердить пароль</span>
+                                </div>
+                            </div>        
+                            <input type="text" name="town" placeholder="Ваш город" class="log-in__input sign-in__input">
+                        <button class="store__main__btn sign-in__btn" onclick="openSignInThanks()">Зарегистрироваться</button>
+                        </form>
+                        <div class="sign-in__confidential">
+                            <img src="img/Icons/iconConfidential.svg" alt="" class="sign-in__confidential__img">
+                            <p class="sign-in__confidential__text">Нажимая кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+    <script src="js/header.js"></script>
+</body>
+</html>
